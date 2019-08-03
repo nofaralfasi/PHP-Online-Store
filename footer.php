@@ -5,7 +5,7 @@
                     <div class="col-sm-2">
                         <div class="companyinfo">
                             <h2><span>Stickers</span> Center</h2>
-                            <p>Profesional Wallstickers & Wallpapers For Your Best Home Design</p>
+                            <p>Professional Wall-Stickers & Wallpapers For Your Best Home Design</p>
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -86,7 +86,6 @@
                         <div class="single-widget">
                             <h2>Service</h2>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#">Online Help</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Order Status</a></li>
                                 <li><a href="#">Change Location</a></li>
@@ -99,7 +98,6 @@
                             <h2>Quick Shop</h2>
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="#">Wall Stickers</a></li>
-                                <li><a href="#">Wallpapers</a></li>
                                 <li><a href="#">Kids</a></li>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Gift Cards</a></li>
@@ -111,10 +109,9 @@
                             <h2>Policies</h2>
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Privecy Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Refund Policy</a></li>
                                 <li><a href="#">Billing System</a></li>
-                                <li><a href="#">Ticket System</a></li>
                             </ul>
                         </div>
                     </div>
