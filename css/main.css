@@ -361,7 +361,7 @@ ul.sub-menu {
     text-transform: uppercase;
 }
 
-.companyinfo h2 span {
+.companyinfo h2 span h3 {
     color: #3D0859;
 }
 
@@ -650,8 +650,8 @@ ul.sub-menu {
     padding-top: 15px;
 }
 
-.left-sidebar h2,
-.brands_products h2 {
+.left-sidebar h2, h3,
+.brands_products h2  h3 {
     color: #3D0859;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -847,6 +847,16 @@ h2.title {
     position: relative;
 }
 
+h3.title {
+    color: #3D0859;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 15px 30px;
+    position: relative;
+}
+
 .product-image-wrapper {
     border: 1px solid #F7F7F5;
     overflow: hidden;
@@ -864,7 +874,7 @@ h2.title {
     right: 0;
 }
 
-.productinfo h2 {
+.productinfo h2 h3 {
     color: #3D0859;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -1253,7 +1263,7 @@ h2.title {
     margin-top: 18px;
 }
 
-.product-information span span {
+.product-information span span h3 {
     color: #3D0859;
     float: left;
     font-family: 'Roboto', sans-serif;
@@ -1420,7 +1430,7 @@ h2.title {
     margin-top: 50px;
 }
 
-.content-404 h2 a {
+.content-404 h2 a h3 {
     background: #3D0859;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;

@@ -176,8 +176,8 @@ function getRecommendedPro()
 						<div class='single-products'>
 							<div class='productinfo text-center'>
 								<img src='admin_area/product_images/$pro_image' class='size200' alt='' />
-								<h2>$ $pro_price</h2>
-								<p>$pro_title</p>
+								<h3>$pro_title</h3>
+								<p>$ $pro_price</p>
 								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
 								to cart</a>
 							</div>

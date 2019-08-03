@@ -2,7 +2,7 @@
     <div class="left-sidebar">
         <h2>Wall Stickers</h2>
         <div class="panel-group category-products" id="accordian">
-            <!--category-productsr-->
+            <!--category-products-->
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -38,7 +38,7 @@
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Bedroom</a></li>
-                            <li><a href="#">Livingroom</a></li>
+                            <li><a href="#">Living-room</a></li>
                             <li><a href="#">Kid Room</a></li>
                             <li><a href="#">Baby</a></li>
                             <li><a href="#">Bathroom</a></li>
@@ -119,7 +119,7 @@
                     <li><a href=""> <span class="pull-right">(50)</span>Home</a></li>
                     <li><a href=""> <span class="pull-right">(56)</span>Bedroom</a></li>
                     <li><a href=""> <span class="pull-right">(27)</span>Kids</a></li>
-                    <li><a href=""> <span class="pull-right">(32)</span>Livingroom</a></li>
+                    <li><a href=""> <span class="pull-right">(32)</span>Living-room</a></li>
                     <li><a href=""> <span class="pull-right">(9)</span>Others</a></li>
                 </ul>
             </div>
