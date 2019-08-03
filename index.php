@@ -35,7 +35,7 @@ include("header.php");
                             <div class="item">
                                 <div class="col-sm-6">
                                     <h1><span>Stickers</span> Center</h1>
-                                    <h2>100% Responsive Design</h2>
+                                    <h2>100% Quality Design</h2>
                                     <p>Design your house as you wish with our wide range of products. </p>
                                     <button type="button" class="btn btn-default get">Get it now</button>
                                 </div>

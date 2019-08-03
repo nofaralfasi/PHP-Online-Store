@@ -6,7 +6,7 @@ session_start();
 <html>
 	<head>
 		<title>Login Form</title>
-<link rel="stylesheet" href="styles/login_style.css" media="all" /> 
+<link rel="stylesheet" href="styles/login_style.css"/>
 
 	</head>
 <body>

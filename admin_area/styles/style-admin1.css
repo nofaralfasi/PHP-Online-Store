@@ -58,24 +58,27 @@ body {
     height: 800px;
     float: right;
     border-left: 5px groove orange;
-    background: #ffffff;
+    background-color: #5c3292;
+
 }
 
 #right a {
     text-decoration: none;
-    color: white;
+    background-color: #5c3292;
     text-align: left;
     font-size: 18px;
     font-family: Palatino, serif;
     padding: 6px;
     margin: 6px;
     display: block;
+    color: white;
 }
 
 #right a:hover {
     text-decoration: underline;
     font-weight: bolder;
     color: orange;
+
 }
 
 
