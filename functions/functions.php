@@ -156,6 +156,36 @@ function getPro()
     }
 }
 
+function getSelectedPro()
+{
+    if (isset($_GET['pro_id'])) {
+        global $con;
+        $product_id = $_GET['pro_id'];
+        $get_pro = "select * from products where product_id='$product_id'";
+        $run_pro = mysqli_query($con, $get_pro);
+        while ($row_pro = mysqli_fetch_array($run_pro)) {
+            $pro_id = $row_pro['product_id'];
+            $pro_title = $row_pro['product_title'];
+            $pro_price = $row_pro['product_price'];
+            $pro_image = $row_pro['product_image'];
+            $pro_desc = $row_pro['product_desc'];
+            echo "
+            <h2>$pro_title</h2>
+            <p>$pro_id</p>
+            <img src='admin_area/product_images/$pro_image' alt='' />
+            <span>
+                <span>$ $pro_price</span>
+                <label>Quantity: </label>
+                <input type='text' value='1'/>
+                <button type=\"button\" class=\"btn btn-fefault cart\">
+                <i href='index.php?add_cart=$pro_id' class=\"fa fa-shopping-cart\"></i>Add to cart
+                </button>
+            </span>
+            ";
+        }
+    }
+}
+
 function getProTabs()
 {
     if (!isset($_GET['cat'])) {
@@ -296,4 +326,43 @@ function getBrandPro()
     }
 }
 
+function getSimilarPro()
+{
+//    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+    if (!isset($_GET['cat'])) {
+        if (!isset($_GET['brand'])) {
+            global $con;
+            $get_pro = "select * from products order by RAND() LIMIT 0,3";
+            $run_pro = mysqli_query($con, $get_pro);
+            while ($row_pro = mysqli_fetch_array($run_pro)) {
+                $pro_image = $row_pro['product_image'];
+                echo "
+       			<img src='admin_area/product_images/$pro_image' alt='' />					
+		        ";
+            }
+        }
+    }
+}
 
+function getProImg()
+{
+    $pro_id = $_GET['pro'];
+    global $con;
+    $get_pro = "select * from products where product_id='$pro_id'";
+    $run_pro = mysqli_query($con, $get_pro);
+    $count = mysqli_num_rows($run_pro);
+    if ($count == 0) {
+        echo "<h2 style='padding:20px;'>No products were found!!</h2>";
+    }
+    while ($row_brand_pro = mysqli_fetch_array($run_pro)) {
+        $pro_id = $row_brand_pro['product_id'];
+        $pro_cat = $row_brand_pro['product_cat'];
+        $pro_brand = $row_brand_pro['product_brand'];
+        $pro_title = $row_brand_pro['product_title'];
+        $pro_price = $row_brand_pro['product_price'];
+        $pro_image = $row_brand_pro['product_image'];
+        echo "            
+            <img src='admin_area/product_images/$pro_image' alt='' />
+		";
+    }
+}

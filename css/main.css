@@ -637,6 +637,8 @@ h3 {
     top: 50%;
     font-size: 60px;
     color: #C2C2C1;
+    margin: 0 50px 0 50px;
+    /*margin: 50px;*/
 }
 
 .control-carousel:hover {
@@ -1072,14 +1074,14 @@ h3.title {
 
 .recommended-item-control {
     position: absolute;
-    top: 41%;
+    top: 40%;
 }
 
 .recommended-item-control i {
     background: none repeat scroll 0 0 #3D0859;
     color: #FFFFFF;
     font-size: 20px;
-    padding: 4px 10px;
+    padding: 10px 10px;
 }
 
 .recommended-item-control i:hover {
@@ -2516,5 +2518,11 @@ textarea {
 .size250 {
     width: 250px;
     height: 350px;
+    object-fit: cover;
+}
+
+.size400 {
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
