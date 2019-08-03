@@ -156,12 +156,54 @@ function getPro()
     }
 }
 
+function getProTabs()
+{
+    if (!isset($_GET['cat'])) {
+        if (!isset($_GET['brand'])) {
+            global $con;
+            $get_pro = "select * from products order by RAND() LIMIT 0,4";
+            $run_pro = mysqli_query($con, $get_pro);
+            while ($row_pro = mysqli_fetch_array($run_pro)) {
+                $pro_id = $row_pro['product_id'];
+                $pro_cat = $row_pro['product_cat'];
+                $pro_brand = $row_pro['product_brand'];
+                $pro_title = $row_pro['product_title'];
+                $pro_price = $row_pro['product_price'];
+                $pro_image = $row_pro['product_image'];
+
+                echo "
+                  <div class='tab-pane fade active in' id='$pro_brand'>
+            <div class='col-sm-3'>
+                <div class='product-image-wrapper'>
+                    <div class='single-products'>
+                        <div class='productinfo text-center'>
+								<img src='admin_area/product_images/$pro_image' class='size150' alt='' />
+								<h2 style='font-size: medium'>$pro_title</h2>
+								<p>$ $pro_price</p>
+								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
+								to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        
+           
+       
+        </div> <!-- end-kids -->           
+        ";
+            }
+        }
+    }
+}
+
 function getRecommendedPro()
 {
     if (!isset($_GET['cat'])) {
         if (!isset($_GET['brand'])) {
             global $con;
-            $get_pro = "select * from products order by RAND() LIMIT 0,6";
+            $get_pro = "select * from products order by RAND() LIMIT 0,3";
             $run_pro = mysqli_query($con, $get_pro);
             while ($row_pro = mysqli_fetch_array($run_pro)) {
                 $pro_id = $row_pro['product_id'];
@@ -176,7 +218,7 @@ function getRecommendedPro()
 						<div class='single-products'>
 							<div class='productinfo text-center'>
 								<img src='admin_area/product_images/$pro_image' class='size200' alt='' />
-								<h3>$pro_title</h3>
+								<h2 style='color: #3D0859; font-size: medium;'>$pro_title</h2>
 								<p>$ $pro_price</p>
 								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
 								to cart</a>
@@ -253,3 +295,5 @@ function getBrandPro()
         }
     }
 }
+
+

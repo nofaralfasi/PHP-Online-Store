@@ -90,9 +90,21 @@ include("header.php");
                         <?php getBrandPro(); ?>
                     </div>
 
-                    <?php
-                    include("category_tab.php");
-                    ?>
+                    <!--category-tab starts--->
+                    <div class="category-tab">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#kids" data-toggle="tab">Kids</a></li>
+                                <li><a href="#livingroom" data-toggle="tab">Living-room</a></li>
+                                <li><a href="#bedroom" data-toggle="tab">Bedroom</a></li>
+                                <li><a href="#home" data-toggle="tab">Home</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <?php getProTabs(); ?>
+                        </div>
+                    </div>
+                    <!--category-tab ends --->
 
                     <?php
                     include("recommended_items.php");

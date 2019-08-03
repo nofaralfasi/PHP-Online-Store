@@ -365,6 +365,10 @@ ul.sub-menu {
     color: #3D0859;
 }
 
+h3 {
+    color: #3D0859;
+}
+
 .companyinfo p {
     color: #B3B3AD;
     font-family: 'Roboto', sans-serif;
@@ -874,7 +878,14 @@ h3.title {
     right: 0;
 }
 
-.productinfo h2 h3 {
+.productinfo h2 {
+    color: #3D0859;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.productinfo h3 {
     color: #3D0859;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
