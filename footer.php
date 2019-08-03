@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="companyinfo">
-                            <h2><span>Stickers</span> Center</h2>
+                            <h2 style="color: #3D0859"><span style="color: #696763">Stickers</span> Center</h2>
                             <p>Professional Wall-Stickers & Wallpapers For Your Best Home Design</p>
                         </div>
                     </div>

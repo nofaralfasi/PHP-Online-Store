@@ -21,9 +21,6 @@
     </title>
 
     <script type="text/javascript" href="index.js"></script>
-    <!--    <link rel="stylesheet" href="styles/style.css" media="all"/>-->
-
-    <!-- ------------------ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -156,7 +153,7 @@
                 <div class="col-sm-3">
                     <div class="search_box pull-right">
                         <form method="get" action="results.php" enctype="multipart/form-data">
-                            <input type="text" name="user_query" placeholder="Search a Product"/>
+                            <input type="text" name="user_query" placeholder="Search Product"/>
                         </form>
                     </div>
                 </div>

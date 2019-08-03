@@ -1146,9 +1146,11 @@
 
 .fa-angle-left:before {
     content: "\f104"
+    margin: 20px;
 }
 
 .fa-angle-right:before {
+    margin: 20px;
     content: "\f105"
 }
 

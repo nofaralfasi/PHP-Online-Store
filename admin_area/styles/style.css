@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-    background: #ffffff;
+    background-color: #f4f3ff;
 }
 
 .main_wrapper {
@@ -49,7 +49,7 @@ body {
 #left {
     width: 795px;
     height: 800px;
-    background-image: url(../images/bg-body.gif);
+    background-color: #f4f3ff;
     float: left;
 }
 
@@ -66,7 +66,7 @@ body {
     color: white;
     text-align: left;
     font-size: 18px;
-    font-family: Palatino;
+    font-family: Palatino, serif;
     padding: 6px;
     margin: 6px;
     display: block;

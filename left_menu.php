@@ -15,11 +15,7 @@
                 <div id="sportswear" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <li><a href="">Stars </a></li>
-                            <li><a href="">Texts </a></li>
-                            <li><a href="#">Disney </a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="#">3D </a></li>
+                            <?php getCats(); ?>
                         </ul>
                     </div>
                 </div>
@@ -36,18 +32,7 @@
                 <div id="mens" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Bedroom</a></li>
-                            <li><a href="#">Living-room</a></li>
-                            <li><a href="#">Kid Room</a></li>
-                            <li><a href="#">Baby</a></li>
-                            <li><a href="#">Bathroom</a></li>
-                            <li><a href="#">Baby Room</a></li>
-                            <li><a href="#">Kitchen</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li><a href="#">Teens Room</a></li>
-                            <li><a href="#">Coffee Shop</a></li>
-                            <li><a href="#">Other</a></li>
+                            <?php getBrands(); ?>
                         </ul>
                     </div>
                 </div>
@@ -68,7 +53,7 @@
                             <li><a href="">Bedroom</a></li>
                             <li><a href="">Kids</a></li>
                             <li><a href="">Baby</a></li>
-                            <li><a href="">Livingroom</a></li>
+                            <li><a href="">Living-room</a></li>
                         </ul>
                     </div>
                 </div>

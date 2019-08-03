@@ -1,56 +1,42 @@
 <?php
 // After uploading to online server, change this connection accordingly
 $con = mysqli_connect("localhost", "root", "", "ecommerce");
-
 if (mysqli_connect_errno()) {
     echo "The Connection was not established: " . mysqli_connect_error();
 }
+
 // getting the user IP address
 function getIp()
 {
     $ip = $_SERVER['REMOTE_ADDR'];
-
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
     } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     }
-
     return $ip;
 }
-
 
 //creating the shopping cart
 function cart()
 {
     if (isset($_GET['add_cart'])) {
-
         global $con;
-
         $ip = getIp();
-
         $pro_id = $_GET['add_cart'];
-
         $check_pro = "select * from cart where ip_add='$ip' AND p_id='$pro_id'";
-
         $run_check = mysqli_query($con, $check_pro);
-
         if (mysqli_num_rows($run_check) > 0) {
-
             echo "";
         } else {
-
             $insert_pro = "insert into cart (p_id,ip_add) values ('$pro_id','$ip')";
-
             $run_pro = mysqli_query($con, $insert_pro);
-
             echo "<script>window.open('index.php','_self')</script>";
         }
     }
 }
 
 // getting the total added items
-
 function total_items()
 {
     if (isset($_GET['add_cart'])) {
@@ -129,13 +115,15 @@ function getPro()
                 $pro_brand = $row_pro['product_brand'];
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
-                $pro_image = $row_pro['product_image'];
+//                $pro_image = $row_pro['product_image'];
+                $pro_image = json_decode($row_pro['product_image'], true);
+//                var_dump($pro_image);
                 echo "
 				<div class='col-sm-4'>
 					<div class='product-image-wrapper'>
 						<div class='single-products'>
 							<div class='productinfo text-center'>
-								<img src='admin_area/product_images/$pro_image' class='size200x300' alt='' />
+								<img src='admin_area/product_images/$pro_image[1]' class='size200x300' alt='' />
 								<h2 style='font-size: medium'>$pro_title</h2>
 								<p>$ $pro_price</p>
 								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
@@ -167,16 +155,15 @@ function getSelectedPro()
             $pro_id = $row_pro['product_id'];
             $pro_title = $row_pro['product_title'];
             $pro_price = $row_pro['product_price'];
-            $pro_image = $row_pro['product_image'];
             $pro_desc = $row_pro['product_desc'];
-            echo "
-            <h2>$pro_title</h2>
-            <p>$pro_id</p>
-            <img src='admin_area/product_images/$pro_image' alt='' />
+            echo "<h2>$pro_title</h2>
+            <br><p>sku:  $pro_id</p>
+            <br><p>$pro_desc</p>
             <span>
                 <span>$ $pro_price</span>
-                <label>Quantity: </label>
+                <br><label>Quantity: </label>
                 <input type='text' value='1'/>
+                <br><br>
                 <button type=\"button\" class=\"btn btn-fefault cart\">
                 <i href='index.php?add_cart=$pro_id' class=\"fa fa-shopping-cart\"></i>Add to cart
                 </button>
@@ -200,6 +187,7 @@ function getProTabs()
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
                 $pro_image = $row_pro['product_image'];
+                $pro_image = json_decode($row_pro['product_image'], true);
 
                 echo "
                   <div class='tab-pane fade active in' id='$pro_brand'>
@@ -207,20 +195,14 @@ function getProTabs()
                 <div class='product-image-wrapper'>
                     <div class='single-products'>
                         <div class='productinfo text-center'>
-								<img src='admin_area/product_images/$pro_image' class='size150' alt='' />
+								<img src='admin_area/product_images/$pro_image[0]' class='size150' alt='' />
 								<h2 style='font-size: medium'>$pro_title</h2>
 								<p>$ $pro_price</p>
-								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
-								to cart</a>
+								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add to cart</a>
                         </div>
-
                     </div>
                 </div>
-            </div>
-            
-        
-           
-       
+            </div>                
         </div> <!-- end-kids -->           
         ";
             }
@@ -242,12 +224,14 @@ function getRecommendedPro()
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
                 $pro_image = $row_pro['product_image'];
+                $pro_image = json_decode($row_pro['product_image'], true);
+
                 echo "
 				<div class='col-sm-4'>
 					<div class='product-image-wrapper'>
 						<div class='single-products'>
 							<div class='productinfo text-center'>
-								<img src='admin_area/product_images/$pro_image' class='size200' alt='' />
+								<img src='admin_area/product_images/$pro_image[0]' class='size200' alt='' />
 								<h2 style='color: #3D0859; font-size: medium;'>$pro_title</h2>
 								<p>$ $pro_price</p>
 								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
@@ -281,13 +265,15 @@ function getCatPro()
             $pro_title = $row_cat_pro['product_title'];
             $pro_price = $row_cat_pro['product_price'];
             $pro_image = $row_cat_pro['product_image'];
+            $pro_image = json_decode($row_cat_pro['product_image'], true);
+
             echo "
 				<div id='single_product'>				
 					<h3>$pro_title</h3>					
-					<img src='admin_area/product_images/$pro_image' class='size200' />
+					<img src='admin_area/product_images/$pro_image[0]' class='size200' />
 					<p>$ $pro_price</p>
 					<a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>					
-					<a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>				
+					<a href='index.php?pro_id=$pro_id'><button>Add to Cart</button></a>				
 				</div>		
 		";
         }
@@ -313,40 +299,45 @@ function getBrandPro()
             $pro_title = $row_brand_pro['product_title'];
             $pro_price = $row_brand_pro['product_price'];
             $pro_image = $row_brand_pro['product_image'];
+            $pro_image = json_decode($row_brand_pro['product_image'], true);
+
             echo "
 				<div id='single_product'>
 					<h2>$pro_title</h2>					
-					<img src='admin_area/product_images/$pro_image' class='size200' />					
+					<img src='admin_area/product_images/$pro_image[0]' class='size200' />					
 					<p> $ $pro_price </p>					
 					<a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
-					<a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>		
+					<a href='index.php?pro_id=$pro_id'><button>Add to Cart</button></a>		
 				</div>	
 		";
         }
     }
 }
 
-function getSimilarPro()
+function getProImgs($order)
 {
-//    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
     if (!isset($_GET['cat'])) {
         if (!isset($_GET['brand'])) {
+            $pro_id = $_GET['pro_id'];
             global $con;
-            $get_pro = "select * from products order by RAND() LIMIT 0,3";
+            $get_pro = "select * from products where product_id='$pro_id' order by $order;";
             $run_pro = mysqli_query($con, $get_pro);
             while ($row_pro = mysqli_fetch_array($run_pro)) {
-                $pro_image = $row_pro['product_image'];
-                echo "
-       			<img src='admin_area/product_images/$pro_image' alt='' />					
+                $pro_image = json_decode($row_pro['product_image'], true);
+                $len = count($pro_image);
+                for ($i = 0; $i < 3; $i++) {
+                    echo "
+       			<a href=''><img src='admin_area/product_images/$pro_image[$i]' class='size50' alt='' ></a>
 		        ";
+                }
             }
         }
     }
 }
 
-function getProImg()
+function getProImg($img)
 {
-    $pro_id = $_GET['pro'];
+    $pro_id = $_GET['pro_id'];
     global $con;
     $get_pro = "select * from products where product_id='$pro_id'";
     $run_pro = mysqli_query($con, $get_pro);
@@ -355,14 +346,10 @@ function getProImg()
         echo "<h2 style='padding:20px;'>No products were found!!</h2>";
     }
     while ($row_brand_pro = mysqli_fetch_array($run_pro)) {
-        $pro_id = $row_brand_pro['product_id'];
-        $pro_cat = $row_brand_pro['product_cat'];
-        $pro_brand = $row_brand_pro['product_brand'];
-        $pro_title = $row_brand_pro['product_title'];
-        $pro_price = $row_brand_pro['product_price'];
-        $pro_image = $row_brand_pro['product_image'];
+        $pro_image = json_decode($row_brand_pro['product_image'], true);
+
         echo "            
-            <img src='admin_area/product_images/$pro_image' alt='' />
+            <img src='admin_area/product_images/$pro_image[$img]' alt='' >
 		";
     }
 }

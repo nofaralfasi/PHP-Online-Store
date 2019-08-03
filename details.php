@@ -19,20 +19,20 @@ include("header.php");
                     <div class="product-details"><!--product-details-->
                         <div class="col-sm-5">
                             <div class="view-product">
-                                <?php getProImg(); ?>
+                                <?php getProImg("0"); ?>
                                 <h3>ZOOM</h3>
                             </div>
                             <div id="similar-product" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <?php getSimilarPro(); ?>
+                                        <?php getProImgs("RAND()"); ?>
                                     </div>
                                     <div class="item">
-                                        <?php getSimilarPro(); ?>
+                                        <?php getProImgs("RAND()"); ?>
                                     </div>
                                     <div class="item">
-                                        <?php getSimilarPro(); ?>
+                                        <?php getProImgs("RAND()"); ?>
                                     </div>
                                 </div>
                                 <a class="left item-control" href="#similar-product" data-slide="prev">
