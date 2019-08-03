@@ -16,7 +16,6 @@ include("header.php");
                 ?>
 
                 <div class="col-sm-9 padding-right">
-
                     <div class="product-details"><!--product-details-->
                         <div class="col-sm-5">
                             <div class="view-product">
