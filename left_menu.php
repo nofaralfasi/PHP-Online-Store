@@ -1,14 +1,13 @@
 <div class="col-sm-3">
     <div class="left-sidebar">
-        <h2>Wall Stickers</h2>
+        <h2>Shop By</h2>
         <div class="panel-group category-products" id="accordian">
-            <!--category-products-->
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
                             <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                            Stickers By Subjects
+                            Subject
                         </a>
                     </h4>
                 </div>
@@ -20,12 +19,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordian" href="#mens">
                             <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                            Categories
+                            Category
                         </a>
                     </h4>
                 </div>
@@ -37,62 +37,28 @@
                     </div>
                 </div>
             </div>
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordian" href="#womens">
                             <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                            Rooms
+                            Room
                         </a>
                     </h4>
                 </div>
+
+                <h2>Popular</h2>
                 <div id="womens" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Bedroom</a></li>
-                            <li><a href="">Kids</a></li>
-                            <li><a href="">Baby</a></li>
-                            <li><a href="">Living-room</a></li>
+                            <?php getBrands(); ?>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="">Stars</a></h4>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Texts</a></h4>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Trees</a></h4>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Flowers</a></h4>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Sports</a></h4>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Disney</a></h4>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Birds</a></h4>
-                </div>
-            </div>
+
+            <?php getMainCats(); ?>
         </div>
         <!--/category-products-->
 
@@ -101,6 +67,8 @@
             <h2>Wallpapers</h2>
             <div class="brands-name">
                 <ul class="nav nav-pills nav-stacked">
+                    <?php getThemes(); ?>
+
                     <li><a href=""> <span class="pull-right">(50)</span>Home</a></li>
                     <li><a href=""> <span class="pull-right">(56)</span>Bedroom</a></li>
                     <li><a href=""> <span class="pull-right">(27)</span>Kids</a></li>

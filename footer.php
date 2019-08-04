@@ -121,8 +121,8 @@
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="#">Company Information</a></li>
                                 <li><a href="#">Deliveries</a></li>
-                                <li><a href="#">Store Location</a></li>
-                                <li><a href="#">Copyright</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Why Us</a></li>
                             </ul>
                         </div>
                     </div>
