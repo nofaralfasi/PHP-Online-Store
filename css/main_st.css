@@ -8,7 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    font-weight: 400;
+    font-weight: 400px;
 }
 
 ul li {
@@ -52,10 +52,10 @@ h6 {
 
 a#scrollUp {
     bottom: 0;
-    right: 15px;
+    right: 10px;
     padding: 5px 10px;
     background: #3D0859;
-    /*color: #FFF;*/
+    color: #FFF;
     -webkit-animation: bounce 2s ease infinite;
     animation: bounce 2s ease infinite;
 }
@@ -427,7 +427,7 @@ h3 {
 
 .video-gallery p {
     color: #8C8C88;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 0;
@@ -435,7 +435,7 @@ h3 {
 
 .video-gallery h2 {
     color: #8c8c88;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
@@ -547,7 +547,7 @@ h3 {
 
 .footer-bottom p {
     color: #363432;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-left: 15px;
 }
@@ -660,7 +660,8 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 auto 20px;
+    /*margin: 0 auto 20px; 4.8.19-nof*/
+    margin: 0 auto 30px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -769,7 +770,7 @@ h2.title:before {
 .brands-name .nav-stacked li a {
     background-color: #FFFFFF;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     padding: 5px 25px;
     text-decoration: none;
@@ -819,7 +820,7 @@ h2.title:before {
     border-width: 5px 5px 0;
     bottom: 0;
     left: 50%;
-    margin-left: 1px;
+    margin-left: -5px;
 }
 
 .padding-right {
@@ -831,22 +832,22 @@ h2.title:before {
     /* width: 200mm;
     height: 250mm; */
 }
+/*4.8.19 nofar*/
+/*.crop {*/
+/*    width: 200px;*/
+/*    height: 150px;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.crop {
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-}
-
-.crop img {
-    width: 400px;
-    height: 300px;
-    margin: -75px 0 0 -100px;
-}
+/*.crop img {*/
+/*    width: 400px;*/
+/*    height: 300px;*/
+/*    margin: -75px 0 0 -100px;*/
+/*}*/
 
 h2.title {
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -856,7 +857,7 @@ h2.title {
 
 h3.title {
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -883,27 +884,27 @@ h3.title {
 
 .productinfo h2 {
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
 
 .productinfo h3 {
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
 
 .product-overlay h2 {
     color: #fff;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
 
 .productinfo p {
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #696763;
@@ -921,13 +922,14 @@ h3.title {
 .product-overlay {
     background: rgba(61, 8, 89, .7);
     top: 0;
+    display: none; /*4.8.19 nofar added like in old design*/
     height: 0;
     position: absolute;
     -webkit-transition: height 500ms ease 0s;
     transition: height 500ms ease 0s;
     width: 100%;
     display: block;
-    object-fit: cover;
+    /*object-fit: cover; 4.8.19 nofar*/
 }
 
 .single-products:hover .product-overlay {
@@ -947,7 +949,7 @@ h3.title {
     border: 0 none;
     border-radius: 0;
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 15px;
     margin-bottom: 25px;
 }
@@ -958,7 +960,7 @@ h3.title {
 }
 
 .product-overlay p {
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
@@ -969,7 +971,7 @@ h3.title {
     border: 0 none;
     border-radius: 0;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 15px;
     margin-bottom: 25px;
 }
@@ -1000,7 +1002,7 @@ h3.title {
 
 .choose ul li a {
     color: #B3AFA8;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 13px;
     padding-left: 0;
     padding-right: 0;
@@ -1033,7 +1035,7 @@ h3.title {
     border-radius: 0;
     color: #B3AFA8;
     display: block;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -1075,14 +1077,14 @@ h3.title {
 
 .recommended-item-control {
     position: absolute;
-    top: 40%;
+    top: 41%;
 }
 
 .recommended-item-control i {
     background: none repeat scroll 0 0 #3D0859;
     color: #FFFFFF;
     font-size: 20px;
-    padding: 10px 10px;
+    padding: 4px 10px;
 }
 
 .recommended-item-control i:hover {
@@ -1208,7 +1210,7 @@ h3.title {
     background: #3D0859;
     bottom: 0;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 0;
@@ -1260,14 +1262,14 @@ h3.title {
 
 .product-information h2 {
     color: #363432;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 20px;
     margin-top: 0;
 }
 
 .product-information p {
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     margin-bottom: 5px;
 }
 
@@ -1280,17 +1282,17 @@ h3.title {
 .product-information span span h3 {
     color: #3D0859;
     float: left;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 30px;
     font-weight: 700;
     margin-right: 20px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .product-information span input {
     border: 1px solid #DEDEDC;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 15px;
     /*font-weight: 700;*/
     height: 33px;
@@ -1301,7 +1303,7 @@ h3.title {
 
 .product-information span label {
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-weight: 700;
     margin-right: 5px;
 }
@@ -1315,7 +1317,7 @@ h3.title {
     border: 0 none;
     border-radius: 0;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 15px;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -1349,7 +1351,7 @@ h3.title {
 #reviews ul li a {
     color: #696763;
     display: block;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     padding-right: 15px;
 }
@@ -1376,7 +1378,7 @@ h3.title {
     background: #F0F0E9;
     border: 0 none;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 14px;
     outline: medium none;
     padding: 8px;
@@ -1406,7 +1408,7 @@ h3.title {
     border: 0 none;
     border-radius: 0;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 14px;
 }
 
@@ -1425,7 +1427,7 @@ h3.title {
 
 .content-404 h1 {
     color: #363432;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 41px;
     font-weight: 300;
 }
@@ -1436,7 +1438,7 @@ h3.title {
 
 .content-404 p {
     color: #363432;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 18px;
 }
 
@@ -1447,7 +1449,7 @@ h3.title {
 .content-404 h2 a h3 {
     background: #3D0859;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 44px;
     font-weight: 300;
     padding: 8px 40px;
@@ -1474,7 +1476,7 @@ h3.title {
 .login-form h2,
 .signup-form h2 {
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 30px;
@@ -1486,7 +1488,7 @@ h3.title {
     border: medium none;
     color: #696763;
     display: block;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 14px;
     /*font-weight: 300;*/
     height: 40px;
@@ -1518,7 +1520,7 @@ h3.title {
     border-radius: 0;
     color: #FFFFFF;
     display: block;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     padding: 6px 25px;
 }
 
@@ -1537,7 +1539,7 @@ h3.title {
     background: #3D0859;
     border-radius: 40px;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-size: 16px;
     height: 50px;
     line-height: 50px;
@@ -1596,7 +1598,7 @@ h3.title {
     background: #3D0859;
     color: #fff;
     font-size: 16px;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto',  sans-serif;
     font-weight: normal;
 }
 
@@ -1628,7 +1630,7 @@ h3.title {
 
 #cart_items .cart_info .cart_description h4 a {
     color: #363432;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: normal;
 }
@@ -1670,7 +1672,7 @@ h3.title {
     float: left;
     font-size: 16px;
     text-align: center;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cart_delete {
@@ -1699,7 +1701,7 @@ h3.title {
 .heading h3 {
     color: #363432;
     font-size: 20px;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .heading p {
@@ -1772,7 +1774,8 @@ h3.title {
 select,
 textarea {
     background: #F0F0E9;
-    border: 1px;
+    border: 0;
+  /*  border: 1px; 4.8.19 nof*/
     color: #696763;
     padding: 5px;
     width: 100%;
@@ -1822,7 +1825,7 @@ textarea {
     font-size: 20px;
     margin-bottom: 35px;
     padding: 10px 25px;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .checkout-options {
@@ -1834,7 +1837,7 @@ textarea {
     font-size: 20px;
     margin-bottom: 0;
     font-weight: normal;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .checkout-options p {
@@ -1848,7 +1851,7 @@ textarea {
     margin-right: 45px;
     color: #696763;
     font-size: 18px;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
 
@@ -1870,6 +1873,7 @@ textarea {
 .checkout-options .nav i {
     margin-right: 10px;
     border-radius: 50%;
+    padding: 5px; /*4.8.19*/
     background: #3D0859;
     color: #fff;
     font-size: 14px;
@@ -1939,7 +1943,7 @@ textarea {
 .order-message label {
     font-weight: 300;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     margin-left: 10px;
     font-size: 14px
 }
@@ -1992,7 +1996,7 @@ textarea {
 .blog-post-area .single-blog-post h3 {
     color: #696763;
     font-size: 16px;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 17px;
@@ -2005,7 +2009,7 @@ textarea {
     border: 1px solid #F7F7F0;
     width: 100%;
     margin-bottom: 30px;
-    object-fit: cover;
+    /*object-fit: cover; 4.8.19 */
 }
 
 .blog-post-area .single-blog-post p {
@@ -2123,7 +2127,7 @@ textarea {
 
 .rating-area {
     border: 1px solid #F7F7F0;
-    /*direction: block;*/
+    direction: block; /*4.8.19*/
     overflow: hidden;
     object-fit: cover;
 }
@@ -2200,7 +2204,7 @@ textarea {
     color: #363432;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 15px
 }
 

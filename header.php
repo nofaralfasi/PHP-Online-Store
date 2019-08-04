@@ -153,7 +153,7 @@
                 <div class="col-sm-3">
                     <div class="search_box pull-right">
                         <form method="get" action="results.php" enctype="multipart/form-data">
-                            <input type="text" name="user_query" placeholder="Search Product"/>
+                            <input type="text" name="user_query" placeholder="Enter a keyword"/>
                         </form>
                     </div>
                 </div>
