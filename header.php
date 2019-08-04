@@ -26,7 +26,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/main_st.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -81,14 +81,14 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="">Israel</a></li>
+                                <li><a href="">IL</a></li>
                                 <li><a href="">UK</a></li>
                             </ul>
                         </div>
 
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                Shekels
+                                NIS
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -132,17 +132,12 @@
                             <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="all_products.php">Products</a></li>
-                                    <li><a href="all_products.php">Product Details</a></li>
                                     <li><a href="checkout.php">Checkout</a></li>
                                     <li><a href="cart.php">Cart</a></li>
                                     <li><a href="customer_login.php">Login</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                <ul role="menu" class="sub-menu">
-                                    <li><a href="">Blog List</a></li>
-                                    <li><a href="">Blog Single</a></li>
-                                </ul>
+                            <li class="dropdown"><a href="#">Blog<i></i></a>
                             </li>
                             <li><a href="">Best Sellers</a></li>
                             <li><a href="">Contact</a></li>
