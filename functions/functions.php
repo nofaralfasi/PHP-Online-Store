@@ -122,12 +122,12 @@ function getMainCats()
 function getThemes()
 {
     global $con;
-    $get_brands = "select * from brands";
-    $run_brands = mysqli_query($con, $get_brands);
-    while ($row_brands = mysqli_fetch_array($run_brands)) {
-        $brand_id = $row_brands['brand_id'];
-        $brand_title = $row_brands['brand_title'];
-        echo "<li><a href='index.php?brand=$brand_id'>$brand_title</a></li>";
+    $get_themes = "select * from themes";
+    $run_themes = mysqli_query($con, $get_themes);
+    while ($row_themes = mysqli_fetch_array($run_themes)) {
+        $theme_id = $row_themes['$theme_id'];
+        $theme_title = $row_themes['$theme_title'];
+        echo "<li><a href='index.php?brand=$theme_id'>$theme_title</a></li>";
     }
 }
 
