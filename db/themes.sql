@@ -37,7 +37,7 @@ CREATE TABLE `themes` (
 -- Dumping data for table `themes`
 --
 
-INSERT INTO `themes` (`theme_id`, `theme_title``) VALUES
+INSERT INTO `themes` (`theme_id`, `theme_title`) VALUES
 (1, 'Words & Phrases'),
 (2, 'Love & Romance'),
 (3, 'Flowers & Plants'),
