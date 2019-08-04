@@ -123,9 +123,8 @@ var getElementById = function(id, context) {
     element = $("#" + id, context)[0];
   } else {
     element = document.getElementById(id);
-  };
-
-  return element;
+  }
+    return element;
 };
 
 var findAbsolutePosition = function(obj)  {
@@ -267,7 +266,7 @@ var GMaps = (function(global) {
       context_menu_element.innerHTML = html;
 
       var context_menu_items = context_menu_element.getElementsByTagName('a'),
-          context_menu_items_count = context_menu_items.length
+          context_menu_items_count = context_menu_items.length;
           i;
 
       for (i = 0; i < context_menu_items_count; i++) {
@@ -343,7 +342,7 @@ var GMaps = (function(global) {
 
       doc.body.appendChild(ul);
 
-      var context_menu_element = getElementById('gmaps_context_menu')
+      var context_menu_element = getElementById('gmaps_context_menu');
 
       google.maps.event.addDomListener(context_menu_element, 'mouseout', function(ev) {
         if (!ev.relatedTarget || !this.contains(ev.relatedTarget)) {
@@ -1547,8 +1546,8 @@ GMaps.prototype.toImage = function(options) {
     
     static_map_options['polyline'] = {};
     static_map_options['polyline']['path'] = google.maps.geometry.encoding.encodePath(polyline.getPath());
-    static_map_options['polyline']['strokeColor'] = polyline.strokeColor
-    static_map_options['polyline']['strokeOpacity'] = polyline.strokeOpacity
+    static_map_options['polyline']['strokeColor'] = polyline.strokeColor;
+    static_map_options['polyline']['strokeOpacity'] = polyline.strokeOpacity;
     static_map_options['polyline']['strokeWeight'] = polyline.strokeWeight
   }
 

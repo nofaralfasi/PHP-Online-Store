@@ -2,7 +2,7 @@
 session_start();
 include("functions/functions.php");
 $page = "home";
-$title = "Homepage";
+$title = "Home | Stickers-Center";
 $metaD = "Stickers Center Homepage";
 include("header.php");
 ?>

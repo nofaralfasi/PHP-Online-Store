@@ -21,7 +21,7 @@ $(document).ready(function () {
             animation: 'fade', // Fade, slide, none
             animationSpeed: 200, // Animation in speed (ms)
             scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
-            scrollTarget: false, // Set  a custom target element for scrolling to the top
+            //scrollTarget: false, // Set a custom target element for scrolling to the top
             scrollText: '<i class="fa fa-angle-up"></i>', // Text for element, can contain HTML
             scrollTitle: false, // Set a custom <a> title if required.
             scrollImg: false, // Set true to use image
