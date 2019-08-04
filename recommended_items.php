@@ -5,11 +5,11 @@
         <div class="carousel-inner">
             <div class="item active">
 
-                <?php getRecommendedPro(); ?>
+                <?php getRecommendedProducts(); ?>
 
             </div>
             <div class="item">
-                <?php getRecommendedPro(); ?>
+                <?php getRecommendedProducts(); ?>
             </div>
         </div>
         <a class="left recommended-item-control" href="#recommended-item-carousel"

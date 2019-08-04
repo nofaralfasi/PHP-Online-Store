@@ -10,7 +10,7 @@
 
             <ul id="cats">
 
-                <?php getCats(); ?>
+                <?php getCategories(); ?>
 
                 <ul>
 

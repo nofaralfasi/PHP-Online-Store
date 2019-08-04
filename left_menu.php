@@ -14,7 +14,7 @@
                 <div id="sportswear" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <?php getCats(); ?>
+                            <?php getCategories(); ?>
                         </ul>
                     </div>
                 </div>

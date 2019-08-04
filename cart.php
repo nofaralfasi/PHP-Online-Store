@@ -19,7 +19,7 @@ include("header.php");
                 Categories
             </div>
             <ul id="cats" class="col-sm-12">
-                <?php getCats(); ?>
+                <?php getCategories(); ?>
                 <ul>
                     <div id="sidebar_title">Brands</div>
                     <ul id="cats">

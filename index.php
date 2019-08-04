@@ -85,9 +85,9 @@ include("header.php");
                 <div class="col-sm-9 padding-right">
                     <div class="features_items">
                         <h2 class="title text-center">Featured Items</h2>
-                        <?php getPro(); ?>
-                        <?php getCatPro(); ?>
-                        <?php getBrandPro(); ?>
+                        <?php getProducts(); ?>
+                        <?php getCategoryProducts(); ?>
+                        <?php getThemeProducts(); ?>
                     </div>
 
                     <!--category-tab starts--->
@@ -101,7 +101,7 @@ include("header.php");
                             </ul>
                         </div>
                         <div class="tab-content">
-                            <?php getProTabs(); ?>
+                            <?php getProductsTabs(); ?>
                         </div>
                     </div>
                     <!--category-tab ends --->

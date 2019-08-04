@@ -77,7 +77,7 @@ function total_price()
 }
 
 //getting the categories
-function getCats()
+function getCategories()
 {
     global $con;
     $get_cats = "select * from categories";
@@ -86,18 +86,6 @@ function getCats()
         $cat_id = $row_cats['cat_id'];
         $cat_title = $row_cats['cat_title'];
         echo "<li><a href='index.php?cat=$cat_id'>$cat_title</a></li>";
-    }
-}
-
-function getRooms()
-{
-    global $con;
-    $get_brands = "select * from brands";
-    $run_brands = mysqli_query($con, $get_brands);
-    while ($row_brands = mysqli_fetch_array($run_brands)) {
-        $brand_id = $row_brands['brand_id'];
-        $brand_title = $row_brands['brand_title'];
-        echo "<li><a href='index.php?brand=$brand_id'>$brand_title</a></li>";
     }
 }
 
@@ -127,21 +115,21 @@ function getThemes()
     while ($row_themes = mysqli_fetch_array($run_themes)) {
         $theme_id = $row_themes['$theme_id'];
         $theme_title = $row_themes['$theme_title'];
-        echo "<li><a href='index.php?brand=$theme_id'>$theme_title</a></li>";
+        echo "<li><a href='index.php?theme=$theme_id'>$theme_title</a></li>";
     }
 }
 
-function getPro()
+function getProducts()
 {
     if (!isset($_GET['cat'])) {
-        if (!isset($_GET['brand'])) {
+        if (!isset($_GET['theme'])) {
             global $con;
             $get_pro = "select * from products order by RAND() LIMIT 0,6";
             $run_pro = mysqli_query($con, $get_pro);
             while ($row_pro = mysqli_fetch_array($run_pro)) {
                 $pro_id = $row_pro['product_id'];
                 $pro_cat = $row_pro['product_cat'];
-                $pro_brand = $row_pro['product_brand'];
+                $pro_theme = $row_pro['product_theme'];
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
                 $pro_image = json_decode($row_pro['product_image'], true);
@@ -171,7 +159,7 @@ function getPro()
     }
 }
 
-function getSelectedPro()
+function getSelectedProduct()
 {
     if (isset($_GET['pro_id'])) {
         global $con;
@@ -200,24 +188,24 @@ function getSelectedPro()
     }
 }
 
-function getProTabs()
+function getProductsTabs()
 {
     if (!isset($_GET['cat'])) {
-        if (!isset($_GET['brand'])) {
+        if (!isset($_GET['theme'])) {
             global $con;
             $get_pro = "select * from products order by RAND() LIMIT 0,4";
             $run_pro = mysqli_query($con, $get_pro);
             while ($row_pro = mysqli_fetch_array($run_pro)) {
                 $pro_id = $row_pro['product_id'];
                 $pro_cat = $row_pro['product_cat'];
-                $pro_brand = $row_pro['product_brand'];
+                $pro_theme = $row_pro['product_theme'];
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
                 $pro_image = $row_pro['product_image'];
                 $pro_image = json_decode($row_pro['product_image'], true);
 
                 echo "
-                  <div class='tab-pane fade active in' id='$pro_brand'>
+                  <div class='tab-pane fade active in' id='$pro_theme'>
             <div class='col-sm-3'>
                 <div class='product-image-wrapper'>
                     <div class='single-products'>
@@ -237,17 +225,17 @@ function getProTabs()
     }
 }
 
-function getRecommendedPro()
+function getRecommendedProducts()
 {
     if (!isset($_GET['cat'])) {
-        if (!isset($_GET['brand'])) {
+        if (!isset($_GET['theme'])) {
             global $con;
             $get_pro = "select * from products order by RAND() LIMIT 0,3";
             $run_pro = mysqli_query($con, $get_pro);
             while ($row_pro = mysqli_fetch_array($run_pro)) {
                 $pro_id = $row_pro['product_id'];
                 $pro_cat = $row_pro['product_cat'];
-                $pro_brand = $row_pro['product_brand'];
+                $pro_theme = $row_pro['product_theme'];
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
                 $pro_image = $row_pro['product_image'];
@@ -274,7 +262,7 @@ function getRecommendedPro()
 }
 
 
-function getCatPro()
+function getCategoryProducts()
 {
     if (isset($_GET['cat'])) {
         $cat_id = $_GET['cat'];
@@ -288,7 +276,7 @@ function getCatPro()
         while ($row_cat_pro = mysqli_fetch_array($run_cat_pro)) {
             $pro_id = $row_cat_pro['product_id'];
             $pro_cat = $row_cat_pro['product_cat'];
-            $pro_brand = $row_cat_pro['product_brand'];
+            $pro_theme = $row_cat_pro['product_theme'];
             $pro_title = $row_cat_pro['product_title'];
             $pro_price = $row_cat_pro['product_price'];
             $pro_image = json_decode($row_cat_pro['product_image'], true);
@@ -307,24 +295,24 @@ function getCatPro()
 }
 
 
-function getBrandPro()
+function getThemeProducts()
 {
-    if (isset($_GET['brand'])) {
-        $brand_id = $_GET['brand'];
+    if (isset($_GET['theme'])) {
+        $theme_id = $_GET['theme'];
         global $con;
-        $get_brand_pro = "select * from products where product_brand='$brand_id'";
-        $run_brand_pro = mysqli_query($con, $get_brand_pro);
-        $count_brands = mysqli_num_rows($run_brand_pro);
-        if ($count_brands == 0) {
-            echo "<h2 style='padding:20px;'>No products were found associated with this brand.</h2>";
+        $get_theme_pro = "select * from products where product_theme='$theme_id'";
+        $run_theme_pro = mysqli_query($con, $get_theme_pro);
+        $count_themes = mysqli_num_rows($run_theme_pro);
+        if ($count_themes == 0) {
+            echo "<h2 style='padding:20px;'>No products were found associated with this theme.</h2>";
         }
-        while ($row_brand_pro = mysqli_fetch_array($run_brand_pro)) {
-            $pro_id = $row_brand_pro['product_id'];
-            $pro_cat = $row_brand_pro['product_cat'];
-            $pro_brand = $row_brand_pro['product_brand'];
-            $pro_title = $row_brand_pro['product_title'];
-            $pro_price = $row_brand_pro['product_price'];
-            $pro_image = json_decode($row_brand_pro['product_image'], true);
+        while ($row_theme_pro = mysqli_fetch_array($run_theme_pro)) {
+            $pro_id = $row_theme_pro['product_id'];
+            $pro_cat = $row_theme_pro['product_cat'];
+            $pro_theme = $row_theme_pro['product_theme'];
+            $pro_title = $row_theme_pro['product_title'];
+            $pro_price = $row_theme_pro['product_price'];
+            $pro_image = json_decode($row_theme_pro['product_image'], true);
 
             echo "
 				<div id='single_product'>
@@ -339,10 +327,10 @@ function getBrandPro()
     }
 }
 
-function getProImgs($order)
+function getProductImages($order)
 {
     if (!isset($_GET['cat'])) {
-        if (!isset($_GET['brand'])) {
+        if (!isset($_GET['theme'])) {
             $pro_id = $_GET['pro_id'];
             global $con;
             $get_pro = "select * from products where product_id='$pro_id' order by $order;";
@@ -360,7 +348,7 @@ function getProImgs($order)
     }
 }
 
-function getProImg($img)
+function getProductImage($img)
 {
     $pro_id = $_GET['pro_id'];
     global $con;
@@ -370,8 +358,8 @@ function getProImg($img)
     if ($count == 0) {
         echo "<h2 style='padding:20px;'>No products were found.</h2>";
     }
-    while ($row_brand_pro = mysqli_fetch_array($run_pro)) {
-        $pro_image = json_decode($row_brand_pro['product_image'], true);
+    while ($row_pro = mysqli_fetch_array($run_pro)) {
+        $pro_image = json_decode($row_pro['product_image'], true);
 
         echo "            
             <img src='admin_area/product_images/$pro_image[$img]' alt='' >

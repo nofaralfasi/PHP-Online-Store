@@ -19,20 +19,20 @@ include("header.php");
                     <div class="product-details"><!--product-details-->
                         <div class="col-sm-5">
                             <div class="view-product">
-                                <?php getProImg("0"); ?>
+                                <?php getProductImage("0"); ?>
                                 <h3>ZOOM</h3>
                             </div>
                             <div id="similar-product" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <?php getProImgs("RAND()"); ?>
+                                        <?php getProductImages("RAND()"); ?>
                                     </div>
                                     <div class="item">
-                                        <?php getProImgs("RAND()"); ?>
+                                        <?php getProductImages("RAND()"); ?>
                                     </div>
                                     <div class="item">
-                                        <?php getProImgs("RAND()"); ?>
+                                        <?php getProductImages("RAND()"); ?>
                                     </div>
                                 </div>
                                 <a class="left item-control" href="#similar-product" data-slide="prev">
@@ -48,7 +48,7 @@ include("header.php");
                         <div class="col-sm-7">
                             <div class="product-information">
                                 <img src="images/product-details/new.jpg" class="newarrival" alt=""/>
-                                <?php getSelectedPro(); ?>
+                                <?php getSelectedProduct(); ?>
                                 <a href=""><img src="images/product-details/share.png" class="share img-responsive" alt=""/></a>
                             </div><!--/product-information-->
                         </div>

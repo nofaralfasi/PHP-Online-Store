@@ -58,7 +58,7 @@ include("functions/functions.php");
 				
 				<ul id="cats">
 				
-				<?php getCats(); ?>
+				<?php getCategories(); ?>
 				
 				<ul>
 					
