@@ -23,7 +23,7 @@ include("header.php");
                 <ul>
                     <div id="sidebar_title">Brands</div>
                     <ul id="cats">
-                        <?php getBrands(); ?>
+                        <?php getRooms(); ?>
                         <ul>
         </div>
     </div>

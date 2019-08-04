@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2019 at 05:11 PM
+-- Generation Time: Aug 04, 2019 at 06:11 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -25,55 +25,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `themes`
+-- Table structure for table `titles`
 --
 
-CREATE TABLE `themes` (
-  `theme_id` int(100) NOT NULL,
-  `theme_title` text NOT NULL
+CREATE TABLE `titles` (
+  `title_id` int(100) NOT NULL,
+  `title_title` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `themes`
+-- Dumping data for table `titles`
 --
 
-INSERT INTO `themes` (`theme_id`, `theme_title`) VALUES
-(1, 'Words & Phrases'),
-(2, 'Love & Romance'),
-(3, 'Flowers & Plants'),
-(4, 'Trees'),
-(5, 'Animals'),
-(7, 'Nature & Landscapes'),
-(8, 'Tropical'),
-(9, 'Music'),
-(10, 'Games & Fantasy'),
-(11, 'Sports & Fitness'),
-(12, 'Cities & Buildings'),
-(13, 'Movies & TV'),
-(14, 'Stars'),
-(15, 'Glowing'),
-(16, 'Disney'),
-(17, '3D');
+INSERT INTO `titles` (`title_id`, `title_title`) VALUES
+(1, 'Recommended'),
+(2, 'Sale'),
+(3, 'New'),
+(4, 'Best sellers'),
+(5, 'Popular'),
+(6, 'Featured');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `themes`
+-- Indexes for table `titles`
 --
-ALTER TABLE `themes`
-  ADD PRIMARY KEY (`theme_id`);
+ALTER TABLE `titles`
+  ADD PRIMARY KEY (`title_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `themes`
+-- AUTO_INCREMENT for table `titles`
 --
-ALTER TABLE `themes`
-  MODIFY `theme_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE `titles`
+  MODIFY `title_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

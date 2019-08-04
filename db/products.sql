@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2019 at 05:11 PM
+-- Generation Time: Aug 03, 2019 at 05:13 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -25,55 +25,43 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `themes`
+-- Table structure for table `products`
 --
 
-CREATE TABLE `themes` (
-  `theme_id` int(100) NOT NULL,
-  `theme_title` text NOT NULL
+CREATE TABLE `products` (
+  `product_id` int(100) NOT NULL,
+  `product_cat` int(100) NOT NULL,
+  `product_brand` int(100) NOT NULL,
+  `product_title` varchar(255) NOT NULL,
+  `product_price` int(100) NOT NULL,
+  `product_keywords` text NOT NULL,
+  `product_desc` text NOT NULL,
+  `product_image` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `themes`
+-- Dumping data for table `products`
 --
-
-INSERT INTO `themes` (`theme_id`, `theme_title`) VALUES
-(1, 'Words & Phrases'),
-(2, 'Love & Romance'),
-(3, 'Flowers & Plants'),
-(4, 'Trees'),
-(5, 'Animals'),
-(7, 'Nature & Landscapes'),
-(8, 'Tropical'),
-(9, 'Music'),
-(10, 'Games & Fantasy'),
-(11, 'Sports & Fitness'),
-(12, 'Cities & Buildings'),
-(13, 'Movies & TV'),
-(14, 'Stars'),
-(15, 'Glowing'),
-(16, 'Disney'),
-(17, '3D');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `themes`
+-- Indexes for table `products`
 --
-ALTER TABLE `themes`
-  ADD PRIMARY KEY (`theme_id`);
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`product_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `themes`
+-- AUTO_INCREMENT for table `products`
 --
-ALTER TABLE `themes`
-  MODIFY `theme_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE `products`
+  MODIFY `product_id` int(300) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

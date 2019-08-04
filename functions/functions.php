@@ -89,7 +89,7 @@ function getCats()
     }
 }
 
-function getBrands()
+function getRooms()
 {
     global $con;
     $get_brands = "select * from brands";
@@ -101,7 +101,7 @@ function getBrands()
     }
 }
 
-function getMainCats()
+function getMainCategories()
 {
     global $con;
     $get_cats = "select * from categories";

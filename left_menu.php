@@ -32,7 +32,7 @@
                 <div id="mens" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <?php getBrands(); ?>
+                            <?php getRooms(); ?>
                         </ul>
                     </div>
                 </div>
@@ -52,19 +52,19 @@
                 <div id="womens" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <?php getBrands(); ?>
+                            <?php getRooms(); ?>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <?php getMainCats(); ?>
+            <?php getMainCategories(); ?>
         </div>
         <!--/category-products-->
 
         <div class="brands_products">
             <!--brands_products-->
-            <h2>Wallpapers</h2>
+            <h2>Themes</h2>
             <div class="brands-name">
                 <ul class="nav nav-pills nav-stacked">
                     <?php getThemes(); ?>

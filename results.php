@@ -59,7 +59,7 @@ include("header.php");
 
                     <ul id="cats">
 
-                        <?php getBrands(); ?>
+                        <?php getRooms(); ?>
 
                         <ul>
 
