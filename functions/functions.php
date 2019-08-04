@@ -88,24 +88,6 @@ function getCategories()
     }
 }
 
-function getMainCategories()
-{
-    global $con;
-    $get_cats = "select * from categories";
-    $run_cats = mysqli_query($con, $get_cats);
-    while ($row_cats = mysqli_fetch_array($run_cats)) {
-        $cat_id = $row_cats['cat_id'];
-        $cat_title = $row_cats['cat_title'];
-        echo "
-            <div class='panel panel-default'>
-                <div class='panel-heading'>
-                    <h4 class='panel-title'><a href='index.php?cat=$cat_id'>$cat_title</a></h4>
-                </div>
-            </div>
-            ";
-    }
-}
-
 function getThemes()
 {
     global $con;
@@ -135,7 +117,7 @@ function getProducts()
     if (!isset($_GET['cat'])) {
         if (!isset($_GET['theme'])) {
             global $con;
-            $get_pro = "select * from products order by RAND() LIMIT 0,6";
+            $get_pro = "select * from products order by RAND() LIMIT 0,9";
             $run_pro = mysqli_query($con, $get_pro);
             while ($row_pro = mysqli_fetch_array($run_pro)) {
                 $pro_id = $row_pro['product_id'];

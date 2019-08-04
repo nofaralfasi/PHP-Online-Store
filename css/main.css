@@ -237,7 +237,7 @@ a#scrollUp i {
 }
 
 .mainmenu ul li:first-child {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .mainmenu ul li a {
@@ -665,7 +665,7 @@ h3 {
     font-family: 'Roboto', monospace;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
