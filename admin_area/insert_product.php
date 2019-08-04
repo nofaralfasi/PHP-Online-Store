@@ -41,17 +41,17 @@ include("includes/db.php");
         </tr>
 
         <tr>
-            <td align="right"><b>Product Brand:</b></td>
+            <td align="right"><b>Product Theme:</b></td>
             <td>
-                <select name="product_brand">
-                    <option>Select a Brand</option>
+                <select name="product_theme">
+                    <option>Select a Theme</option>
                     <?php
-                    $get_brands = "select * from brands";
-                    $run_brands = mysqli_query($con, $get_brands);
-                    while ($row_brands = mysqli_fetch_array($run_brands)) {
-                        $brand_id = $row_brands['brand_id'];
-                        $brand_title = $row_brands['brand_title'];
-                        echo "<option value='$brand_id'>$brand_title</option>";
+                    $get_themes = "select * from themes";
+                    $run_themes = mysqli_query($con, $get_themes);
+                    while ($row_themes = mysqli_fetch_array($run_themes)) {
+                        $theme_id = $row_themes['theme_id'];
+                        $theme_title = $row_themes['theme_title'];
+                        echo "<option value='$theme_id'>$theme_title</option>";
                     }
                     ?>
                 </select>
@@ -106,14 +106,14 @@ if (isset($_FILES['product_image'])) {
 if (isset($_POST['insert_post'])) {
     $product_title = $_POST['product_title'];
     $product_cat = $_POST['product_cat'];
-    $product_brand = $_POST['product_brand'];
+    $product_theme = $_POST['product_theme'];
     $product_price = $_POST['product_price'];
     $product_desc = $_POST['product_desc'];
     $product_keywords = $_POST['product_keywords'];
     $pro_image = json_encode($name_array);
 
-    $insert_product = "insert into products(product_cat,product_brand,product_title,product_price,product_desc,product_image,product_keywords) 
-    values('$product_cat','$product_brand','$product_title','$product_price','$product_desc','$pro_image','$product_keywords')";
+    $insert_product = "insert into products(product_cat,product_theme,product_title,product_price,product_desc,product_image,product_keywords) 
+    values('$product_cat','$product_theme','$product_title','$product_price','$product_desc','$pro_image','$product_keywords')";
 
     $insert_pro = mysqli_query($con, $insert_product);
 

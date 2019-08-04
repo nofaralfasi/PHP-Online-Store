@@ -33,8 +33,8 @@ else {
 			<a href="index.php?view_products">View All Products</a>
 			<a href="index.php?insert_cat">Insert New Category</a>
 			<a href="index.php?view_cats">View All Categories</a>
-			<a href="index.php?insert_brand">Insert New Brand</a>
-			<a href="index.php?view_brands">View All Brands</a>
+			<a href="index.php?insert_theme">Insert New Theme</a>
+			<a href="index.php?view_themes">View All Themes</a>
 			<a href="index.php?view_customers">View Customers</a>
 			<a href="index.php?view_orders">View Orders</a>
 			<a href="index.php?view_payments">View Payments</a>
@@ -62,7 +62,7 @@ else {
 		}
 		if(isset($_GET['insert_cat'])){
 		
-		include("insert_cat.php"); 
+		include("insert_category.php");
 		
 		}
 		
@@ -74,24 +74,24 @@ else {
 		
 		if(isset($_GET['edit_cat'])){
 		
-		include("edit_cat.php"); 
+		include("edit_category.php");
 		
 		}
 		
-		if(isset($_GET['insert_brand'])){
+		if(isset($_GET['insert_theme'])){
 		
-		include("insert_brand.php"); 
-		
-		}
-		
-		if(isset($_GET['view_brands'])){
-		
-		include("view_brands.php"); 
+		include("insert_theme.php");
 		
 		}
-		if(isset($_GET['edit_brand'])){
 		
-		include("edit_brand.php"); 
+		if(isset($_GET['view_themes'])){
+		
+		include("view_themes.php");
+		
+		}
+		if(isset($_GET['edit_theme'])){
+		
+		include("edit_theme.php");
 		
 		}
 		if(isset($_GET['view_customers'])){

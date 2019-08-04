@@ -7,14 +7,14 @@
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
                             <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                            Subject
+                            Theme
                         </a>
                     </h4>
                 </div>
                 <div id="sportswear" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <?php getCategories(); ?>
+                            <?php getThemes(); ?>
                         </ul>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                 <div id="mens" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <?php getRooms(); ?>
+                            <?php getCategories(); ?>
                         </ul>
                     </div>
                 </div>
@@ -52,23 +52,20 @@
                 <div id="womens" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            <?php getRooms(); ?>
+                            <?php getMainCategories(); ?>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <?php getMainCategories(); ?>
+            <?php getTitles(); ?>
         </div>
         <!--/category-products-->
 
         <div class="brands_products">
-            <!--brands_products-->
             <h2>Themes</h2>
             <div class="brands-name">
                 <ul class="nav nav-pills nav-stacked">
-                    <?php getThemes(); ?>
-
                     <li><a href=""> <span class="pull-right">(50)</span>Home</a></li>
                     <li><a href=""> <span class="pull-right">(56)</span>Bedroom</a></li>
                     <li><a href=""> <span class="pull-right">(27)</span>Kids</a></li>

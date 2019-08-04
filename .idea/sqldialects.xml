@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/db/categories.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/db/products.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/db/themes.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/titles.sql" dialect="MySQL" />
   </component>
 </project>

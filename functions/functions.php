@@ -119,6 +119,18 @@ function getThemes()
     }
 }
 
+function getTitles()
+{
+    global $con;
+    $get_titles = "select * from titles";
+    $run_titles = mysqli_query($con, $get_titles);
+    while ($row_titles = mysqli_fetch_array($run_titles)) {
+        $title_id = $row_titles['$title_id'];
+        $title_title = $row_titles['$title_title'];
+        echo "<li><a href='index.php?title=$title_id'>$title_title</a></li>";
+    }
+}
+
 function getProducts()
 {
     if (!isset($_GET['cat'])) {
