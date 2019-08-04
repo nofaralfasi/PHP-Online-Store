@@ -76,7 +76,6 @@ function total_price()
     echo "$" . $total;
 }
 
-//getting the categories
 function getCategories()
 {
     global $con;
@@ -113,8 +112,8 @@ function getThemes()
     $get_themes = "select * from themes";
     $run_themes = mysqli_query($con, $get_themes);
     while ($row_themes = mysqli_fetch_array($run_themes)) {
-        $theme_id = $row_themes['$theme_id'];
-        $theme_title = $row_themes['$theme_title'];
+        $theme_id = $row_themes['theme_id'];
+        $theme_title = $row_themes['theme_title'];
         echo "<li><a href='index.php?theme=$theme_id'>$theme_title</a></li>";
     }
 }
@@ -125,8 +124,8 @@ function getTitles()
     $get_titles = "select * from titles";
     $run_titles = mysqli_query($con, $get_titles);
     while ($row_titles = mysqli_fetch_array($run_titles)) {
-        $title_id = $row_titles['$title_id'];
-        $title_title = $row_titles['$title_title'];
+        $title_id = $row_titles['title_id'];
+        $title_title = $row_titles['title_title'];
         echo "<li><a href='index.php?title=$title_id'>$title_title</a></li>";
     }
 }
