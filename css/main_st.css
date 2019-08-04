@@ -6,7 +6,7 @@
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
 body {
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     font-weight: 400;
 }
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn:hover,
@@ -52,10 +52,10 @@ h6 {
 
 a#scrollUp {
     bottom: 0;
-    right: 10px;
+    right: 15px;
     padding: 5px 10px;
     background: #3D0859;
-    color: #FFF;
+    /*color: #FFF;*/
     -webkit-animation: bounce 2s ease infinite;
     animation: bounce 2s ease infinite;
 }
@@ -64,13 +64,13 @@ a#scrollUp i {
     font-size: 30px;
 }
 
-
 /*************************
 *******Header CSS******
 **************************/
 
 .header_top {
-    background: none repeat scroll 0 0 #F0F0E9;
+    /*background: none repeat scroll 0 0 #F0F0E9;*/
+    background: none repeat scroll 0 0 #f0f0f0;
 }
 
 .contactinfo ul li:first-child {
@@ -80,7 +80,7 @@ a#scrollUp i {
 .contactinfo ul li a {
     font-size: 12px;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contactinfo ul li a:hover {
@@ -148,12 +148,10 @@ a#scrollUp i {
 
 .header-middle .container .row .col-sm-4 {
     padding-left: 0;
-    margin-left: 0;
 }
 
 .header-middle .container .row .col-sm-8 {
     padding-right: 0;
-    margin-left: 0;
 }
 
 .usa {
@@ -189,7 +187,7 @@ a#scrollUp i {
 .dropdown-menu li a:focus {
     background-color: #3D0859;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
@@ -206,7 +204,7 @@ a#scrollUp i {
 .shop-menu ul li a {
     background: #FFFFFF;
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     padding: 0;
@@ -242,7 +240,7 @@ a#scrollUp i {
 
 .mainmenu ul li a {
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: 300;
     padding: 0 0 10px;
@@ -256,6 +254,7 @@ a#scrollUp i {
 }
 
 .search_box input {
+    background: #F0F0E9;
     border: medium none;
     color: #B2B2B2;
     font-family: 'roboto', serif;
@@ -268,9 +267,7 @@ a#scrollUp i {
     background: #F0F0E9 url(../images/home/searchicon.png) no-repeat 130px;
 }
 
-
 /*  Dropdown menu*/
-
 .navbar-header .navbar-toggle .icon-bar {
     background-color: #fff;
 }
@@ -334,29 +331,26 @@ ul.sub-menu {
     }
 }
 
-
 /*************************
 *******Footer CSS******
 **************************/
-
 #footer {
     background: #F0F0E9;
-    margin-top: 10px;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    object-fit: cover;
+    /*margin-top: 10px;*/
+    /*display: block;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*object-fit: cover;*/
 }
 
 .footer-top .container {
     border-bottom: 1px solid #E0E0DA;
     padding-bottom: 20px;
-    margin-top: 10px;
-;
+    /*margin-top: 10px;*/
 }
 
 .companyinfo {
-    margin-top: 60px;
+    margin-top: 57px;
 }
 
 .companyinfo h2 {
@@ -376,7 +370,7 @@ h3 {
 
 .companyinfo p {
     color: #B3B3AD;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
 }
@@ -386,7 +380,7 @@ h3 {
 }
 
 .video-gallery {
-    margin-top: 60px;
+    margin-top: 57px;
     position: inherit;
 }
 
@@ -402,7 +396,7 @@ h3 {
     margin-bottom: 10px;
     border: 2px solid #CCCCC6;
     border-radius: 3px;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 .overlay-icon {
@@ -456,12 +450,12 @@ h3 {
 
 .address img {
     width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 .address p {
     color: #666663;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     left: 25px;
@@ -470,7 +464,7 @@ h3 {
 }
 
 .footer-widget {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
 }
 
 .footer-widget .container {
@@ -480,7 +474,7 @@ h3 {
 
 .single-widget h2 {
     color: #666663;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 22px;
@@ -493,7 +487,7 @@ h3 {
 
 .single-widget ul li a {
     color: #8C8C88;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     padding: 5px 0;
@@ -511,7 +505,7 @@ h3 {
 .searchform input {
     border: 1px solid #DDDDDD;
     color: #CCCCC6;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 0;
     outline: medium none;
@@ -540,7 +534,7 @@ h3 {
 
 .searchform p {
     color: #8C8C88;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     margin-top: 25px;
@@ -553,7 +547,7 @@ h3 {
 
 .footer-bottom p {
     color: #363432;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;;
     font-weight: 300;
     margin-left: 15px;
 }
@@ -564,15 +558,13 @@ h3 {
     text-decoration: underline;
 }
 
-
 /*************************
 ******* Home ******
 **************************/
-
 #slider {
-    /*padding-bottom: 45px;*/
-    padding: 45px;
-    margin: 45px;
+    padding-bottom: 45px;
+    /*padding: 5px;*/
+    /*margin: 5px;*/
 }
 
 .carousel-indicators li {
@@ -585,13 +577,17 @@ h3 {
 
 .item {
     padding-left: 100px;
-    color: #3D0859;
+    /*color: #3D0859;*/
 }
 
 .pricing {
     position: absolute;
     right: 40%;
     top: 52%;
+}
+
+.girl {
+    margin-left: 0;
 }
 
 .item h1 {
@@ -607,7 +603,7 @@ h3 {
 
 .item h2 {
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 22px;
@@ -618,7 +614,7 @@ h3 {
     color: #363432;
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .get {
@@ -626,7 +622,7 @@ h3 {
     border: 0 none;
     border-radius: 0;
     color: #FFFFFF;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin-top: 23px;
@@ -641,7 +637,6 @@ h3 {
     top: 50%;
     font-size: 60px;
     color: #C2C2C1;
-    margin: 0 50px 0 50px;
 }
 
 .control-carousel:hover {
@@ -660,9 +655,9 @@ h3 {
 }
 
 .left-sidebar h2, h3,
-.brands_products h2  h3 {
+.brands_products h2 h3 {
     color: #3D0859;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin: 0 auto 20px;
@@ -713,11 +708,11 @@ h2.title:before {
 
 .category-products .panel {
     background-color: #FFFFFF;
-    border: 0px;
-    border-radius: 0px;
+    border: 0;
+    border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .category-products .panel-default .panel-heading {
@@ -729,7 +724,7 @@ h2.title:before {
 
 .category-products .panel-default .panel-heading .panel-title a {
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -760,7 +755,7 @@ h2.title:before {
 
 .panel-body ul li a {
     color: #696763;
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
 }
