@@ -74,7 +74,6 @@ include("header.php");
     </section>
     <!--/slider-->
 
-    <!--left sidebar starts here-->
     <section>
         <div class="container">
             <div class="row">
@@ -90,7 +89,6 @@ include("header.php");
                         <?php getThemeProducts(); ?>
                     </div>
 
-                    <!--category-tab starts--->
                     <div class="category-tab">
                         <div class="col-sm-12">
                             <ul class="nav nav-tabs">
@@ -104,7 +102,6 @@ include("header.php");
                             <?php getProductsTabs(); ?>
                         </div>
                     </div>
-                    <!--category-tab ends --->
 
                     <?php
                     include("recommended_items.php");

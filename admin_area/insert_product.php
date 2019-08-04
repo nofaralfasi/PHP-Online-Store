@@ -60,7 +60,6 @@ include("includes/db.php");
 
         <tr>
             <td align="right"><b>Product Image:</b></td>
-
             <td><input type="file" name="product_image[]" multiple >
             </td>
         </tr>
