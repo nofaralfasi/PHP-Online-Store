@@ -26,7 +26,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main1.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -44,7 +44,7 @@
                 <div class="col-sm-6">
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
-                            <li><a href="#"><i class="fa fa-phone"></i>+972 526205429</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i> +972 526205429</a></li>
                             <li><a href="#"><i class="fa fa-envelope"></i> my.stickers.center@gmail.com</a></li>
                         </ul>
                     </div>
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-md-4 clearfix">
                     <div class="logo pull-left">
-                        <a href="index.php"><img src="images/home/logo3.png" alt=""/></a>
+                        <a href="index.php"><img src="images/home/logo3.jpg" alt=""/></a>
                     </div>
                     <div class="btn-group pull-left clearfix">
                         <div class="btn-group">

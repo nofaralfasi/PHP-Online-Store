@@ -335,7 +335,7 @@ ul.sub-menu {
 *******Footer CSS******
 **************************/
 #footer {
-    background: #F0F0E9;
+    background: #f0f0ed;
     /*margin-top: 10px;*/
     /*display: block;*/
     /*overflow: hidden;*/
@@ -344,7 +344,7 @@ ul.sub-menu {
 }
 
 .footer-top .container {
-    border-bottom: 1px solid #E0E0DA;
+    border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
     /*margin-top: 10px;*/
 }
@@ -541,7 +541,7 @@ h3 {
 }
 
 .footer-bottom {
-    background: #D6D6D0;
+    background: #d6d6d6;
     padding-top: 10px;
 }
 

@@ -3,11 +3,11 @@
 
     <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+
             <div class="item active">
-
                 <?php getRecommendedProducts(); ?>
-
             </div>
+
             <div class="item">
                 <?php getRecommendedProducts(); ?>
             </div>

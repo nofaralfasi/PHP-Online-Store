@@ -231,7 +231,6 @@ function getRecommendedProducts()
                 $pro_theme = $row_pro['product_theme'];
                 $pro_title = $row_pro['product_title'];
                 $pro_price = $row_pro['product_price'];
-                $pro_image = $row_pro['product_image'];
                 $pro_image = json_decode($row_pro['product_image'], true);
 
                 echo "
@@ -242,8 +241,7 @@ function getRecommendedProducts()
 								<img src='admin_area/product_images/$pro_image[0]' class='size200' alt='' />
 								<h2 style='color: #3D0859; font-size: medium;'>$pro_title</h2>
 								<p>$ $pro_price</p>
-								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add
-								to cart</a>
+								<a href='index.php?add_cart=$pro_id' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>Add to cart</a>
 							</div>
 						</div>
 				</div>
