@@ -69,7 +69,6 @@ a#scrollUp i {
 **************************/
 
 .header_top {
-    /*background: none repeat scroll 0 0 #F0F0E9;*/
     background: none repeat scroll 0 0 #f0f0f0;
 }
 
@@ -142,12 +141,13 @@ a#scrollUp i {
     border-bottom: 1px solid #f5f5f5;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px; /*was 20px 5.8.19*/
+    padding-top: 10px; /*was 20px 5.8.19*/
 }
 
 .header-middle .container .row .col-sm-4 {
     padding-left: 0;
+    box-sizing: border-box; /*5.8.19*/
 }
 
 .header-middle .container .row .col-sm-8 {
@@ -156,11 +156,10 @@ a#scrollUp i {
 
 .usa {
     border-radius: 0;
-    color: #B4B1AB;
+    color: #b0b0b0;
     font-size: 12px;
-    margin-right: 20px;
     padding: 2px 15px;
-    margin-top: 10px;
+    margin: 10px 20px 0 5px;
 }
 
 .usa:hover {
@@ -221,8 +220,8 @@ a#scrollUp i {
 }
 
 .header-bottom {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .navbar-collapse.collapse {
@@ -254,7 +253,7 @@ a#scrollUp i {
 }
 
 .search_box input {
-    background: #F0F0E9;
+    background: #f0f0f0;
     border: medium none;
     color: #B2B2B2;
     font-family: 'roboto', serif;
@@ -264,7 +263,7 @@ a#scrollUp i {
     outline: medium none;
     padding-left: 10px;
     width: 155px;
-    background: #F0F0E9 url(../images/home/searchicon.png) no-repeat 130px;
+    background: #f0f0f0 url(../images/home/searchicon.png) no-repeat 130px;
 }
 
 /*  Dropdown menu*/
@@ -369,7 +368,7 @@ h3 {
 }
 
 .companyinfo p {
-    color: #B3B3AD;
+    color: #b3b3b3;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -426,7 +425,7 @@ h3 {
 }
 
 .video-gallery p {
-    color: #8C8C88;
+    color: #8c8c8c;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -434,7 +433,7 @@ h3 {
 }
 
 .video-gallery h2 {
-    color: #8c8c88;
+    color: #8c8c8c;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -473,7 +472,7 @@ h3 {
 }
 
 .single-widget h2 {
-    color: #666663;
+    color: #666666;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -486,7 +485,7 @@ h3 {
 }
 
 .single-widget ul li a {
-    color: #8C8C88;
+    color: #8c8c8c;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -504,7 +503,7 @@ h3 {
 
 .searchform input {
     border: 1px solid #DDDDDD;
-    color: #CCCCC6;
+    color: #cccccc;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 0;
@@ -533,7 +532,7 @@ h3 {
 }
 
 .searchform p {
-    color: #8C8C88;
+    color: #8c8c8c;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -562,13 +561,13 @@ h3 {
 ******* Home ******
 **************************/
 #slider {
-    padding-bottom: 45px;
-    /*padding: 5px;*/
-    /*margin: 5px;*/
+    /*padding-bottom: 45px;*//*5.8.19*/
+    padding: 0 0 45px 0; /*5.8.19*/
+    margin: 0;
 }
 
 .carousel-indicators li {
-    background: #C4C4BE;
+    background: #c4c4c4;
 }
 
 .carousel-indicators li.active {
@@ -637,7 +636,7 @@ h3 {
     position: absolute;
     top: 50%;
     font-size: 60px;
-    color: #C2C2C1;
+    color: #c2c2c2;
 }
 
 .control-carousel:hover {
@@ -869,7 +868,8 @@ h3.title {
 .product-image-wrapper {
     border: 1px solid #F7F7F5;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /*5.8.19*/
 }
 
 .single-products {
@@ -1336,6 +1336,10 @@ h3.title {
     padding-left: 0;
     padding-right: 0;
 }
+.col-sm-6 {
+    padding-right: 20px;
+    /*margin: 100px;*/
+}
 
 #reviews ul {
     background: #FFFFFF;
@@ -1728,14 +1732,14 @@ h3.title {
 }
 
 .total_area ul li {
-    background: #E6E4DF;
+    background: #e4e4e4;
     color: #696763;
     margin-top: 10px;
     padding: 7px 20px;
 }
 
 .user_option label {
-    color: #696763;
+    color: #6c6c6c;
     font-weight: normal;
     margin-left: 10px;
 }
@@ -1760,7 +1764,7 @@ h3.title {
 
 .user_info .single_field.zip-field input {
     background: transparent;
-    border: 1px solid #F0F0E9
+    border: 1px solid #f0f0f0
 }
 
 .user_info > li {
