@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <?php
 include("includes/db.php");
+
 if (isset($_GET['edit_pro'])) {
     $get_id = $_GET['edit_pro'];
     $get_pro = "select * from products where product_id='$get_id'";

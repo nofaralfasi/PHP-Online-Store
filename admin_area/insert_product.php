@@ -88,7 +88,7 @@ include("includes/db.php");
                             </tr>
 
                             <tr>
-                                <td colspan="7"><input type="submit" name="insert_post" value="Send"/></td>
+                                <td colspan="17"><input type="submit" name="insert_post" value=" Send "/></td>
                             </tr>
                         </table>
                     </form>

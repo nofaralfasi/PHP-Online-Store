@@ -1628,7 +1628,7 @@ h3.title {
 }
 
 #cart_items .cart_info .image {
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 #cart_items .cart_info .cart_description h4 {
@@ -1689,7 +1689,7 @@ h3.title {
 }
 
 .cart_delete a {
-    background: #f0f0f0;
+    background: #e3e3e3;
     color: #FFFFFF;
     padding: 5px 7px;
     font-size: 16px
@@ -2536,4 +2536,59 @@ textarea {
     width: 400px;
     height: 400px;
     object-fit: cover;
+}
+
+.sn a {
+    color: #343434;
+    display: inline-block;
+    font-size: 16px;
+    height: 28px;
+    overflow: hidden;
+    text-align: center;
+    width: 35px;
+    float: left;
+    line-height: 28px;
+}
+
+#cart_items .cart_info .edit h4 {
+    margin-bottom: 0
+}
+
+#cart_items .cart_info .edit h4 a {
+    color: #343434;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#cart_items .cart_info .edit p {
+    color: #515151
+}
+
+#cart_items .cart_info .price p {
+    color: #676767;
+    font-size: 18px
+}
+
+#cart_items .cart_info .description h4 {
+    margin-bottom: 0
+}
+
+#cart_items .cart_info .description h4 a {
+    color: #343434;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#cart_items .cart_info .description p {
+    color: #676767;
+    padding: 0;
+    margin: 0;
+}
+
+.product {
+    display: block;
+    padding: 0;
+    margin: 0;
 }

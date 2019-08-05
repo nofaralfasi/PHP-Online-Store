@@ -2,7 +2,7 @@
     <div class="left-sidebar">
 
         <div class="brands_products">
-            <h2>Stickers Center</h2>
+            <h2>Dashboard</h2>
             <div class="brands-name">
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="index.php?insert_product">Add Product</a></li>

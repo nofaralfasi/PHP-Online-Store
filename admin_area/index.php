@@ -5,7 +5,7 @@ if (!isset($_SESSION['user_email'])) {
 } else {
     $page = "admin";
     $title = "Admin | Add-Product";
-    $metaD = "Stickers Center Admin Homepage";
+    $metaD = "Stickers Center Admin Dashboard";
     include("admin_header.php");
     ?>
 
@@ -29,7 +29,7 @@ if (!isset($_SESSION['user_email'])) {
                                     include("view_products.php");
 
                                 if (isset($_GET['edit_pro']))
-                                    include("edit_pro.php");
+                                    include("edit_product.php");
 
                                 if (isset($_GET['insert_cat']))
                                     include("insert_category.php");

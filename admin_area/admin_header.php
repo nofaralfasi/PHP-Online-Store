@@ -51,6 +51,34 @@
 
 
 <header id="header"><!--header-->
+    <div class="header_top"><!--header_top-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contactinfo">
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-phone"></i> +972 526205429</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> my.stickers.center@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-icons pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.facebook.com/madbekot.comp/"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/stickers_center?lang=he"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/stickers_center_israel/"><i
+                                            class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://plus.google.com/101066463055015880710"><i
+                                            class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header_top-->
     <div class="header-middle"><!--header-middle-->
         <div class="container">
 
@@ -58,7 +86,7 @@
                 <div class="col-md-4 clearfix">
 
                     <div class="logo pull-left">
-                        <a href="index.php"><img src="images/logo.jpg" alt=""/></a>
+                        <a href="index.php"><img src="images/logo1.jpg" alt=""/></a>
                     </div>
 
                     <div class="btn-group pull-left clearfix">
