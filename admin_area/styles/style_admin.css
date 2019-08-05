@@ -43,68 +43,56 @@ h2 {
 .brands_products h2 h3 {
     color: white;
     font-family: 'Roboto', sans-serif;
-    /*font-size: 18px;*/
     font-weight: 700;
-    /*margin: 0 auto 20px; 4.8.19-nof*/
     margin: 0 auto 30px;
     text-align: center;
-    /*text-transform: uppercase;*/
     position: relative;
     z-index: 3;
     bottom: 6px;
-
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
-    /*display: flex;*/
 }
 
-/*.main_wrapper {*/
-/*    width: 1000px;*/
-/*    height: auto;*/
-/*    margin: auto;*/
-/*}*/
-
+#footer{
+    z-index: 1;
+}
 
 #header {
-    /*width: 1000px;*/
-    /*height: 10px;*/
     background-color: white;
-    border-bottom: 5px groove #ececec;
+    border-bottom: 1px groove #f2f2f2;
 }
 
 #left {
-    /*width: 795px;*/
-    /*height: 800px;*/
     background-color: white;
     z-index: 1;
-    /*float: contour;*/
+    float: contour;
 }
 
 #right {
     width: 200px;
-    /*height: 800px;*/
-    height: complex;
+    height: 700px;
+    /*height: complex;*/
     float: right;
-    border-left: 5px groove #ececec;
+    border: 3px groove #ececec;
     background-color: #3D0859;
     /*display: compact;*/
-
+    padding: 10px;
+    margin: 0 20px 0 0;
 }
 
 #right a {
-    text-decoration: none;
+    text-decoration: white;
     background-color: #3D0859;
     text-align: left;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    padding: 6px;
-    margin: 6px;
+    padding: 10px;
+    margin: 10px;
     display: block;
-    /*display: inherit;*/
     color: white;
 }
 
@@ -112,7 +100,6 @@ footer, header, hgroup, menu, nav, section {
     text-decoration: underline;
     font-weight: bolder;
     color: #ececec;
-
 }
 
 .admin_dashboard h2 {
@@ -123,22 +110,31 @@ footer, header, hgroup, menu, nav, section {
     margin: 10px;
 }
 
-.admin_dashboard table tr td {
-    width: 800px;
+.admin_dashboard {
+    width: 100%;
     border: 2px;
     border-top: 0 none;
     vertical-align: center;
     margin: 25px;
     padding: 25px;
-    z-index: -3;
+    z-index: 1;
 }
 
+.admin_dashboard table tr td {
+    width: 100%;
+    border: 2px;
+    border-top: 0 none;
+    vertical-align: center;
+    margin: 5px;
+    padding: 5px;
+    z-index: 1;
+}
 
 .right-sidebar h2, h3,
 .brands_products h2 h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     text-align: center;
     /*position: relative;*/
     z-index: 3;
@@ -164,7 +160,7 @@ h2.title:after {
     height: 30px;
     z-index: -1;
     right: 50%;
-    margin-right: -65px;
+    /*margin-right: -65px;*/
 }
 
 

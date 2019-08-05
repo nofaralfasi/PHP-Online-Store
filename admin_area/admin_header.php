@@ -116,17 +116,4 @@
     </div><!--/header-bottom-->
 </header><!--/header-->
 
-<div class="brands_products">
-    <div id="right" class="right-sidebar">
-        <h2>Store Management </h2>
-        <a href="index.php?insert_product" class="left-sidebar"> Add Product</a>
-        <a href="index.php?view_products" class="left-sidebar"> Products</a>
-        <a href="index.php?insert_cat" class="left-sidebar"> Add Category</a>
-        <a href="index.php?view_cats" class="left-sidebar"> Categories</a>
-        <a href="index.php?insert_theme" class="left-sidebar"> Add Theme</a>
-        <a href="index.php?view_themes" class="left-sidebar"> Themes</a>
-        <a href="index.php?view_customers" class="left-sidebar"> Customers</a>
-        <a href="index.php?view_orders" class="left-sidebar"> Orders</a>
-        <a href="index.php?view_payments" class="left-sidebar"> Payments</a>
-        <a href="logout.php" class="left-sidebar"> Admin Logout</a>
-    </div>
+

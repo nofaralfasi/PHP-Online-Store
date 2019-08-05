@@ -5,95 +5,98 @@ $metaD = "Stickers Center Admin add-product page";
 include("includes/db.php");
 ?>
 
-<div class="features_items">
-    <form action="insert_product.php" method="post" enctype="multipart/form-data">
-        <table class="admin_dashboard">
-            <tr>
-                <td colspan="7"><h2>Insert New Post Here</h2></td>
-            </tr>
+<section>
+    <div class="container">
+        <div class="row">
 
-            <tr>
-                <td>Product Title:</td>
-                <td><label>
-                        <input type="text" name="product_title" size="60%" required/>
-                    </label></td>
-            </tr>
+            <div class="col-sm-9 padding-right">
+                <div class="features_items">
+                    <h2 class="title text-center">New Product</h2>
 
-            <tr>
-                <td>Product Category:</td>
-                <td>
-                    <label>
-                        <select name="product_cat">
-                            <option>Select a Category</option>
-                            <?php
-                            $get_cats = "select * from categories";
-                            $run_cats = mysqli_query($con, $get_cats);
-                            while ($row_cats = mysqli_fetch_array($run_cats)) {
-                                $cat_id = $row_cats['cat_id'];
-                                $cat_title = $row_cats['cat_title'];
-                                echo "<option value='$cat_id'>$cat_title</option>";
-                            }
-                            ?>
-                        </select>
-                    </label>
-                </td>
-            </tr>
+                    <form action="insert_product.php" method="post" enctype="multipart/form-data">
+                        <table class="admin_dashboard">
+                            <tr>
+                                <td>Product Title:</td>
+                                <td><label>
+                                        <input type="text" name="product_title" size="60%" required/>
+                                    </label></td>
+                            </tr>
 
-            <tr>
-                <td>Product Theme:</td>
-                <td>
-                    <label>
-                        <select name="product_theme">
-                            <option>Select a Theme</option>
-                            <?php
-                            $get_themes = "select * from themes";
-                            $run_themes = mysqli_query($con, $get_themes);
-                            while ($row_themes = mysqli_fetch_array($run_themes)) {
-                                $theme_id = $row_themes['theme_id'];
-                                $theme_title = $row_themes['theme_title'];
-                                echo "<option value='$theme_id'>$theme_title</option>";
-                            }
-                            ?>
-                        </select>
-                    </label>
-                </td>
-            </tr>
+                            <tr>
+                                <td>Product Category:</td>
+                                <td>
+                                    <label>
+                                        <select name="product_cat">
+                                            <option>Select a Category</option>
+                                            <?php
+                                            $get_cats = "select * from categories";
+                                            $run_cats = mysqli_query($con, $get_cats);
+                                            while ($row_cats = mysqli_fetch_array($run_cats)) {
+                                                $cat_id = $row_cats['cat_id'];
+                                                $cat_title = $row_cats['cat_title'];
+                                                echo "<option value='$cat_id'>$cat_title</option>";
+                                            }
+                                            ?>
+                                        </select>
+                                    </label>
+                                </td>
+                            </tr>
 
-            <tr>
-                <td>Product Image:</td>
-                <td><input type="file" name="product_image[]" multiple>
-                </td>
-            </tr>
+                            <tr>
+                                <td>Product Theme:</td>
+                                <td>
+                                    <label>
+                                        <select name="product_theme">
+                                            <option>Select a Theme</option>
+                                            <?php
+                                            $get_themes = "select * from themes";
+                                            $run_themes = mysqli_query($con, $get_themes);
+                                            while ($row_themes = mysqli_fetch_array($run_themes)) {
+                                                $theme_id = $row_themes['theme_id'];
+                                                $theme_title = $row_themes['theme_title'];
+                                                echo "<option value='$theme_id'>$theme_title</option>";
+                                            }
+                                            ?>
+                                        </select>
+                                    </label>
+                                </td>
+                            </tr>
 
-            <tr>
-                <td>Product Price:</td>
-                <td><input type="text" name="product_price" required/></td>
-            </tr>
+                            <tr>
+                                <td>Product Image:</td>
+                                <td><input type="file" name="product_image[]" multiple>
+                                </td>
+                            </tr>
 
-            <tr>
-                <td>Product Description:</td>
-                <td><label>
-                        <textarea name="product_desc" cols="20" rows="10"></textarea>
-                    </label></td>
-            </tr>
+                            <tr>
+                                <td>Product Price:</td>
+                                <td><input type="text" name="product_price" required/></td>
+                            </tr>
 
-            <tr>
-                <td>Product Keywords:</td>
-                <td><label>
-                        <input type="text" name="product_keywords" size="60%" required/>
-                    </label></td>
-            </tr>
+                            <tr>
+                                <td>Product Description:</td>
+                                <td><label>
+                                        <textarea name="product_desc" cols="20" rows="10"></textarea>
+                                    </label></td>
+                            </tr>
 
-            <tr>
-                <td colspan="7"><input type="submit" name="insert_post" value="Insert Product Now"/></td>
-            </tr>
-        </table>
-    </form>
-</div>
+                            <tr>
+                                <td>Product Keywords:</td>
+                                <td><label>
+                                        <input type="text" name="product_keywords" size="60%" required/>
+                                    </label></td>
+                            </tr>
 
-<?php
-include("admin_footer.php");
-?>
+                            <tr>
+                                <td colspan="7"><input type="submit" name="insert_post" value="Send"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php
 if (isset($_FILES['product_image'])) {
