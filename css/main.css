@@ -545,7 +545,7 @@ h3 {
 }
 
 .footer-bottom p {
-    color: #363432;
+    color: #343434;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-left: 15px;
@@ -611,7 +611,7 @@ h3 {
 }
 
 .item p {
-    color: #363432;
+    color: #343434;
     font-size: 16px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
@@ -1263,7 +1263,7 @@ h3.title {
 }
 
 .product-information h2 {
-    color: #363432;
+    color: #343434;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 0;
@@ -1292,7 +1292,7 @@ h3.title {
 }
 
 .product-information span input {
-    border: 1px solid #DEDEDC;
+    border: 1px solid #dededc;
     color: #676767;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -1374,7 +1374,7 @@ h3.title {
 }
 
 #reviews p {
-    color: #363432;
+    color: #343434;
 }
 
 #reviews form span {
@@ -1399,7 +1399,7 @@ h3.title {
 #reviews textarea {
     background: #f0f0f0;
     border: medium none;
-    color: #A6A6A1;
+    color: #a6a6a1;
     height: 195px;
     margin-bottom: 25px;
     margin-top: 15px;
@@ -1433,7 +1433,7 @@ h3.title {
 }
 
 .content-404 h1 {
-    color: #363432;
+    color: #343434;
     font-family: 'Roboto', sans-serif;
     font-size: 41px;
     font-weight: 300;
@@ -1444,7 +1444,7 @@ h3.title {
 }
 
 .content-404 p {
-    color: #363432;
+    color: #343434;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -1597,7 +1597,7 @@ h3.title {
 }
 
 #cart_items .cart_info {
-    border: 1px solid #E6E4DF;
+    border: 1px solid #e4e4e4;
     margin-bottom: 50px
 }
 
@@ -1636,7 +1636,7 @@ h3.title {
 }
 
 #cart_items .cart_info .cart_description h4 a {
-    color: #363432;
+    color: #343434;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -1706,7 +1706,7 @@ h3.title {
 }
 
 .heading h3 {
-    color: #363432;
+    color: #343434;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -1723,7 +1723,7 @@ h3.title {
 
 #do_action .total_area,
 #do_action .chose_area {
-    border: 1px solid #E6E4DF;
+    border: 1px solid #e4e4e4;
     color: #676767;
     padding: 30px 25px 30px 0;
     margin-bottom: 80px;
@@ -1828,7 +1828,7 @@ textarea {
 .register-req,
 .step-one .heading {
     background: none repeat scroll 0 0 #f0f0f0;
-    color: #363432;
+    color: #343434;
     font-size: 20px;
     margin-bottom: 35px;
     padding: 10px 25px;
@@ -1840,7 +1840,7 @@ textarea {
 }
 
 .checkout-options h3 {
-    color: #363432;
+    color: #343434;
     font-size: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -2020,7 +2020,7 @@ textarea {
 }
 
 .blog-post-area .single-blog-post p {
-    color: #363432
+    color: #343434
 }
 
 .blog-post-area .post-meta {
@@ -2052,7 +2052,7 @@ textarea {
     padding: 4px 7px;
 }
 
-.sinlge-post-meta li i:after,
+.single-post-meta li i:after,
 .blog-post-area .post-meta ul li i:after {
     content: "";
     position: absolute;
@@ -2156,7 +2156,7 @@ textarea {
 }
 
 .rating-area .rate-this {
-    color: #363432;
+    color: #343434;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -2178,7 +2178,7 @@ textarea {
 }
 
 .rating-area .tag li span {
-    color: #363432;
+    color: #343434;
 }
 
 .socials-share {
@@ -2208,7 +2208,7 @@ textarea {
 }
 
 .media-heading {
-    color: #363432;
+    color: #343434;
     font-size: 14px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -2253,7 +2253,7 @@ textarea {
 
 .media-list .btn-primary,
 .commnets .btn-primary {
-    background: #FC9A11;
+    background: #3D0859;
     border: 0 none;
     border-radius: 0;
     color: #FFFFFF;
@@ -2264,7 +2264,7 @@ textarea {
 }
 
 .response-area h2 {
-    color: #363432;
+    color: #343434;
     font-size: 20px;
     font-weight: 700;
 }
@@ -2290,15 +2290,15 @@ textarea {
     width: 95%;
 }
 
-.sinlge-post-meta {
+.single-post-meta {
     overflow: hidden;
     padding-left: 0;
     margin-bottom: 15px
 }
 
-.sinlge-post-meta li {
+.single-post-meta li {
     background: #f0f0f0;
-    color: #363432;
+    color: #343434;
     float: left;
     font-size: 10px;
     font-weight: 700;
@@ -2308,14 +2308,14 @@ textarea {
     text-transform: uppercase;
 }
 
-.sinlge-post-meta li i {
+.single-post-meta li i {
     background: #3D0859;
     color: #FFFFFF;
     margin-right: 10px;
     padding: 8px 10px;
 }
 
-.sinlge-post-meta li i:after {
+.single-post-meta li i:after {
     top: 7px;
     border-width: 6px;
     left: 27px;
@@ -2329,7 +2329,7 @@ textarea {
 .replay-box h2 {
     font-weight: 700;
     font-size: 20px;
-    color: #363432;
+    color: #343434;
     margin-top: 0;
     margin-bottom: 45px
 }
