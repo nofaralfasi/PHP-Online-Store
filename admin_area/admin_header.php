@@ -33,7 +33,7 @@
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
-<!--    <link rel="stylesheet" href="styles/style_admin.css"/>-->
+    <!--    <link rel="stylesheet" href="styles/style_admin.css"/>-->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
@@ -48,8 +48,6 @@
 </head>
 
 <body>
-
-
 <header id="header"><!--header-->
     <div class="header_top"><!--header_top-->
         <div class="container">

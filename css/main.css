@@ -2605,7 +2605,7 @@ textarea {
 .view_pro_table tr td {
     font-size: 22px;
     font-weight: normal;
-    padding: 25px;/*space between cols of whole table*/
+    padding: 25px; /*space between cols of whole table*/
     margin: 2px;
     text-align: center;
 
@@ -2631,4 +2631,78 @@ textarea {
 
 .view_pro_table tr {
     border-bottom: 1px solid #ddd;
+}
+
+/**** edit_pro_table ****/
+.edit_pro_table {
+    color: #343434;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 20px;
+}
+
+.edit_pro_table tr td {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 15px; /*space between cols of whole table*/
+    margin: 2px;
+    text-align: center;
+
+}
+
+.edit_pro_table td a {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px; /*space between cols of edit and delete only*/
+    margin: 5px;
+    text-decoration: underline;
+}
+
+
+.edit_pro_table tr th {
+    color: #3D0859;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+input.upload_image {
+    padding: 10px;
+    margin-left: 80px;
+    border: 1px solid #DDDDDD;
+    text-decoration: underline;
+    color: #474747;
+    font-size: 16px;
+    background-color: white;
+    width: 100px;
+    float: right;
+}
+
+input.choose_files {
+    padding: 20px 0 20px 20px;
+    margin: 0;
+    color: #474747;
+    font-size: 14px;
+    background-color: white;
+    position: absolute;
+}
+
+.edit_pro_table tr td label {
+     width: 100%;
+ }
+
+.edit_pro_table tr td label select {
+    width: 100%;
+}
+
+.edit_pro_table tr td label input.label_left {
+    color: #66512c;
+    position: relative;
+    text-decoration: underline;
+    float: left;
+
 }
