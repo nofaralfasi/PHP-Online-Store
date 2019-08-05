@@ -1,5 +1,6 @@
 <div class="col-sm-3">
     <div class="left-sidebar">
+
         <div class="brands_products">
             <h2>Stickers Center</h2>
             <div class="brands-name">
@@ -17,5 +18,6 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </div>

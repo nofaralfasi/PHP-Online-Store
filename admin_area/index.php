@@ -9,18 +9,17 @@ if (!isset($_SESSION['user_email'])) {
     include("admin_header.php");
     ?>
 
+    <h2><?php echo @$_GET['logged_in']; ?></h2>
+
     <section>
         <div class="container">
             <div class="row">
                 <?php
                 include("admin_left_menu.php");
                 ?>
-                <h2><?php echo @$_GET['logged_in']; ?></h2>
 
                 <div class="col-sm-9 padding-right">
                     <div class="features_items">
-                        <h2 class="title text-center">Stickers Center</h2>
-
                             <ul class="nav nav-pills nav-stacked">
                                 <?php
                                 if (isset($_GET['insert_product']))

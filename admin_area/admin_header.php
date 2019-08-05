@@ -33,7 +33,7 @@
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style_admin.css"/>
+<!--    <link rel="stylesheet" href="styles/style_admin.css"/>-->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
@@ -96,13 +96,6 @@
                     <div class="mainmenu pull-left">
                         <ul class="nav navbar-nav collapse navbar-collapse">
                             <li><a href="index.php" class="active">Home</a></li>
-<!--                            <li class="dropdown"><a href="#">Buyers manage<i class="fa fa-angle-down"></i></a>-->
-<!--                                <ul role="menu" class="sub-menu">-->
-<!--                                    <li><a href="view_orders.php">Orders</a></li>-->
-<!--                                    <li><a href="view_payments.php">Payments</a></li>-->
-<!--                                    <li><a href="view_customers.php">Customers</a></li>-->
-<!--                                </ul>-->
-<!--                            </li>-->
                             <li class="dropdown"><a href="view_orders.php">Orders<i></i></a>
                             </li>
                             <li><a href="view_payments.php">Payments</a></li>
@@ -115,5 +108,4 @@
         </div>
     </div><!--/header-bottom-->
 </header><!--/header-->
-
 
