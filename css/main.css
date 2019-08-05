@@ -2589,6 +2589,46 @@ textarea {
 
 .product {
     display: block;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+}
+
+.view_pro_table {
+    color: #343434;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 20px;
+}
+
+.view_pro_table tr td {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 25px;/*space between cols of whole table*/
+    margin: 2px;
+    text-align: center;
+
+}
+
+.view_pro_table td a {
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px; /*space between cols of edit and delete only*/
+    margin: 5px;
+    text-decoration: underline;
+}
+
+
+.view_pro_table tr th {
+    color: #3D0859;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.view_pro_table tr {
+    border-bottom: 1px solid #ddd;
 }
