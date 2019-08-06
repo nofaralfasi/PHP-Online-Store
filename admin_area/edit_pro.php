@@ -1,5 +1,5 @@
 <?php
-$page = "edit-pro";
+$page = "edit_pro";
 $title = "Admin | Edit-Product";
 $metaD = "Stickers Center Admin edit-product page";
 include("includes/db.php");
@@ -12,8 +12,8 @@ if (isset($_GET['edit_pro'])) {
     $row_pro = mysqli_fetch_array($run_pro);
     $pro_id = $row_pro['product_id'];
     $pro_title = $row_pro['product_title'];
-    $pro_image = $row_pro['product_image'];
-//    $pro_image = json_decode($row_pro['product_image'], true);
+//    $pro_image = $row_pro['product_image'];
+    $pro_image = json_decode($row_pro['product_image'], true);
     $pro_price = $row_pro['product_price'];
     $pro_desc = $row_pro['product_desc'];
     $pro_keywords = $row_pro['product_keywords'];
@@ -35,7 +35,7 @@ if (isset($_GET['edit_pro'])) {
 <section>
     <div class="container">
         <div class="row">
-            <form action="edit_product.php" method="post" enctype="multipart/form-data">
+            <form action="" method="post" enctype="multipart/form-data">
                 <table class="edit_pro_table">
                     <tr>
                         <td>Product Title:</td>
@@ -89,11 +89,7 @@ if (isset($_GET['edit_pro'])) {
 
                     <tr>
                         <td>Product Image:</td>
-                        <td>
-                            <input class="choose_files" type="file" name="product_image[]" multiple/><img src="product_images/<?php echo $pro_image; ?>" class="size50" alt=""/>
-                            <input class="upload_image" type="submit" name="submit" value="Upload">
-                        </td>
-
+                        <td><input type="file" name="product_image[]" multiple><img src="product_images/<?php echo $pro_image; ?>" class="size50"/></td>
                     </tr>
 
                     <tr>
@@ -123,7 +119,6 @@ if (isset($_GET['edit_pro'])) {
                     </tr>
                 </table>
             </form>
-
         </div>
     </div>
 </section>
@@ -151,6 +146,7 @@ if (isset($_POST['update_product'])) {
     $product_price = $_POST['product_price'];
     $product_desc = $_POST['product_desc'];
     $product_keywords = $_POST['product_keywords'];
+
     $pro_image = json_encode($images_array);
 
     $update_product = "update products set product_cat='$product_cat',product_theme='$product_theme',product_title='$product_title',product_price='$product_price',product_desc='$product_desc',product_image='$pro_image', product_keywords='$product_keywords' where product_id='$update_id'";

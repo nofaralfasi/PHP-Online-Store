@@ -1,5 +1,5 @@
 <?php
-$page = "admin";
+$page = "insert_product";
 $title = "Admin | Add-Product";
 $metaD = "Stickers Center Admin add-product page";
 include("includes/db.php");
@@ -70,7 +70,9 @@ include("includes/db.php");
 
                             <tr>
                                 <td>Product Price:</td>
-                                <td><input type="text" name="product_price" required/></td>
+                                <td><label>
+                                        <input type="text" name="product_price" required/>
+                                    </label></td>
                             </tr>
 
                             <tr>

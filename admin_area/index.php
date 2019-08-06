@@ -29,7 +29,7 @@ if (!isset($_SESSION['user_email'])) {
                                     include("view_products.php");
 
                                 if (isset($_GET['edit_pro']))
-                                    include("edit_product.php");
+                                    include("edit_pro.php");
 
                                 if (isset($_GET['insert_cat']))
                                     include("insert_category.php");
