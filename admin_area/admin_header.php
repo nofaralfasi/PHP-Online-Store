@@ -84,7 +84,7 @@
                 <div class="col-md-4 clearfix">
 
                     <div class="logo pull-left">
-                        <a href="index.php"><img src="images/logo1.jpg" alt=""/></a>
+                        <a href="index.php"><img src="images/logo.jpg" alt=""/></a>
                     </div>
 
                     <div class="btn-group pull-left clearfix">

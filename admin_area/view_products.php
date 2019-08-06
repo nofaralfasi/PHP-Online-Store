@@ -4,11 +4,8 @@ if (!isset($_SESSION['user_email'])) {
     echo "<script>window.open('login.php?not_admin=You are not an Admin!','_self')</script>";
 } else {
     ?>
-
-    <h2 class="title text-center">Store Products</h2>
-
+<!--    <h2 class="title text-center">Store Products</h2>-->
     <table class="view_pro_table">
-
         <tr>
             <th>S.N</th>
             <th>Title</th>

@@ -335,6 +335,7 @@ ul.sub-menu {
 **************************/
 #footer {
     background: #f0f0ed;
+    float: bottom;
     /*margin-top: 10px;*/
     /*display: block;*/
     /*overflow: hidden;*/
@@ -2608,7 +2609,6 @@ textarea {
     padding: 25px; /*space between cols of whole table*/
     margin: 2px;
     text-align: center;
-
 }
 
 .view_pro_table td a {
@@ -2620,18 +2620,20 @@ textarea {
     text-decoration: underline;
 }
 
-
 .view_pro_table tr th {
-    color: #3D0859;
+    color: white;
+    background-color: #3D0859;
     font-size: 24px;
     text-align: center;
     padding: 10px;
     margin: 10px;
+    font-weight: normal;
 }
 
 .view_pro_table tr {
     border-bottom: 1px solid #ddd;
 }
+
 
 /**** edit_pro_table ****/
 .edit_pro_table {
@@ -2661,7 +2663,6 @@ textarea {
     text-decoration: underline;
 }
 
-
 .edit_pro_table tr th {
     color: #3D0859;
     font-size: 18px;
@@ -2670,39 +2671,63 @@ textarea {
     margin: 10px;
 }
 
-input.upload_image {
+input.choose_files {
+    /*padding: 20px 0 20px 20px;*/
     padding: 10px;
-    margin-left: 80px;
-    border: 1px solid #DDDDDD;
-    text-decoration: underline;
+    margin: 0;
     color: #474747;
     font-size: 16px;
     background-color: white;
-    width: 100px;
-    float: right;
+    position: absolute;
+    z-index: -1;
 }
 
-input.choose_files {
-    padding: 20px 0 20px 20px;
-    margin: 0;
-    color: #474747;
-    font-size: 14px;
-    background-color: white;
-    position: absolute;
+input.upload_image {
+    padding: 10px;
+    margin-left: 50px;
+    display: inline;
+    /*border: 1px solid #DDDDDD;*/
+    /*border: none;*/
+    /*text-decoration: underline;*/
+    color: #434138;
+    font-size: 18px;
+    /*background-color: white;*/
+    width: 100px;
+    float: contour;
+    z-index: 2;
+    font-weight: bold;
 }
 
 .edit_pro_table tr td label {
-     width: 100%;
- }
+    width: 100%;
+}
 
 .edit_pro_table tr td label select {
     width: 100%;
 }
 
 .edit_pro_table tr td label input.label_left {
-    color: #66512c;
     position: relative;
-    text-decoration: underline;
     float: left;
+}
 
+.dashboars-actions {
+    border: 1px solid #f7f7f7;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.dashboars-actions .nav-stacked li a {
+    background-color: #FFFFFF;
+    color: #676767;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dashboars-actions .nav-stacked li a:hover {
+    background-color: #fff;
+    color: #676767;
 }

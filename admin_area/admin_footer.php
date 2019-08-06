@@ -1,11 +1,11 @@
-<footer id="footer"><!--Footer-->
+<footer id="footer" style="float: bottom; margin-top: 10px;"><!--Footer-->
     <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
                     <div class="companyinfo">
                         <h2 style="color: #3D0859; text-align: left;"><span style="color: #696763">Stickers</span> Center</h2>
-                        <p>Professional Wall-Stickers & Wallpapers For Your Best Home Design</p>
+                        <p style="font-size: 14px;">Professional Wall-Stickers & Wallpapers For Your Best Home Design</p>
                     </div>
                 </div>
             </div>
